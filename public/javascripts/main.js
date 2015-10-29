@@ -1,3 +1,6 @@
+var markers = [];
+
+
 // DOM Ready =============================================================
 $(document).ready(function() {
     initialize();
@@ -7,10 +10,10 @@ $(document).ready(function() {
 
 //Initialize the map
 function initialize() {
-    var center = new google.maps.LatLng(54.594845, -5.956259);
+    var center = new google.maps.LatLng(39.9051851,-75.3542644);
 
     var mapOptions = {
-        zoom: 14,
+        zoom: 17,
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         center: center,
     };
@@ -24,7 +27,14 @@ function populateMarkers(apiLoc) {
     $.getJSON(apiLoc, function(data) {
         // For each item in our JSON, add a new map marker
         $.each(data, function(i, ob) {
-          alert(i);
+          var marker = new google.maps.Marker({
+                map: map,
+                position: new google.maps.LatLng(this.loc.coordinates[1],this.loc.coordinates[0]),
+                title: 'Site ' + this.name,
+                icon: 'http://maps.google.com/mapfiles/ms/icons/red-dot.png'
+          });
+          markers.push(marker);
         });
+
     });
 };

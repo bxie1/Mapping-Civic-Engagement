@@ -3,15 +3,21 @@ html,body,#map_canvas{
 	margin:0;
 	padding:0;
 }
-
+.container{
+	height: 80%;
+	max-width: 100%;
+}
+.clearfix,.col{
+	height: 100%;
+}
 #site-info{
 	max-height: 100%;
 }
 .site-info{
 	height: auto;
 }
-#options-menu{
-
+#filters{
+	background-color: #efefef;
 }
 
 .thumb{

@@ -13,8 +13,9 @@ Local map of faculty who have civic engagement projects / courses.
 1. Clone this repository
 2. Open terminal and change directories into the root directory of the project
 3. If this is the first time launching the application, issue the following command to install dependancies ``` npm install ```
-4. Once all dependancies have been installed launch the application with the following command ``` node index.js ```
-5. Open a browser and visit the following url: http://http://localhost:3000/
+4. Make sure mongodb is running ``` mongod ```
+5. Once all dependancies have been installed launch the application with the following command ``` node index.js ```
+6. Open a browser and visit the following url: http://http://localhost:3000/
 
 ## Contributing
 

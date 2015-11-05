@@ -1,0 +1,782 @@
+[
+  {
+    "_id": "563b80dc8d2a7c4ad1ed310c",
+    "firstname": "",
+    "lastname": "",
+    "location": {
+      "building": "",
+      "roomNumber": "",
+      "latlng": {
+        "type": "Point",
+        "coordinates": []
+      }
+    },
+    "interestAreas": [],
+    "researchProjects": [
+      {
+        "projectTitle": "",
+        "projectlocation": {
+          "building": "",
+          "roomNumber": ""
+        }
+      }
+    ],
+    "cblCourses": [
+      {
+        "courseName": "",
+        "partners": [
+          {
+            "name": "",
+            "url": "",
+            "location": "",
+            "latlng": {
+              "type": "Point",
+              "coordinates": []
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "563b80dc677a0ec9108f3c71",
+    "firstname": "",
+    "lastname": "",
+    "location": {
+      "building": "",
+      "roomNumber": "",
+      "latlng": {
+        "type": "Point",
+        "coordinates": []
+      }
+    },
+    "interestAreas": [],
+    "researchProjects": [
+      {
+        "projectTitle": "",
+        "projectlocation": {
+          "building": "",
+          "roomNumber": ""
+        }
+      }
+    ],
+    "cblCourses": [
+      {
+        "courseName": "",
+        "partners": [
+          {
+            "name": "",
+            "url": "",
+            "location": "",
+            "latlng": {
+              "type": "Point",
+              "coordinates": []
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "563b80dc077cc23b7c399e2e",
+    "firstname": "",
+    "lastname": "",
+    "location": {
+      "building": "",
+      "roomNumber": "",
+      "latlng": {
+        "type": "Point",
+        "coordinates": []
+      }
+    },
+    "interestAreas": [],
+    "researchProjects": [
+      {
+        "projectTitle": "",
+        "projectlocation": {
+          "building": "",
+          "roomNumber": ""
+        }
+      }
+    ],
+    "cblCourses": [
+      {
+        "courseName": "",
+        "partners": [
+          {
+            "name": "",
+            "url": "",
+            "location": "",
+            "latlng": {
+              "type": "Point",
+              "coordinates": []
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "563b80dc0b582603e1b77135",
+    "firstname": "",
+    "lastname": "",
+    "location": {
+      "building": "",
+      "roomNumber": "",
+      "latlng": {
+        "type": "Point",
+        "coordinates": []
+      }
+    },
+    "interestAreas": [],
+    "researchProjects": [
+      {
+        "projectTitle": "",
+        "projectlocation": {
+          "building": "",
+          "roomNumber": ""
+        }
+      }
+    ],
+    "cblCourses": [
+      {
+        "courseName": "",
+        "partners": [
+          {
+            "name": "",
+            "url": "",
+            "location": "",
+            "latlng": {
+              "type": "Point",
+              "coordinates": []
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "563b80dc79c215fbca9a0d28",
+    "firstname": "",
+    "lastname": "",
+    "location": {
+      "building": "",
+      "roomNumber": "",
+      "latlng": {
+        "type": "Point",
+        "coordinates": []
+      }
+    },
+    "interestAreas": [],
+    "researchProjects": [
+      {
+        "projectTitle": "",
+        "projectlocation": {
+          "building": "",
+          "roomNumber": ""
+        }
+      }
+    ],
+    "cblCourses": [
+      {
+        "courseName": "",
+        "partners": [
+          {
+            "name": "",
+            "url": "",
+            "location": "",
+            "latlng": {
+              "type": "Point",
+              "coordinates": []
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "563b80dc125a977e355eee51",
+    "firstname": "",
+    "lastname": "",
+    "location": {
+      "building": "",
+      "roomNumber": "",
+      "latlng": {
+        "type": "Point",
+        "coordinates": []
+      }
+    },
+    "interestAreas": [],
+    "researchProjects": [
+      {
+        "projectTitle": "",
+        "projectlocation": {
+          "building": "",
+          "roomNumber": ""
+        }
+      }
+    ],
+    "cblCourses": [
+      {
+        "courseName": "",
+        "partners": [
+          {
+            "name": "",
+            "url": "",
+            "location": "",
+            "latlng": {
+              "type": "Point",
+              "coordinates": []
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "563b80dc653c4810f48d0aed",
+    "firstname": "",
+    "lastname": "",
+    "location": {
+      "building": "",
+      "roomNumber": "",
+      "latlng": {
+        "type": "Point",
+        "coordinates": []
+      }
+    },
+    "interestAreas": [],
+    "researchProjects": [
+      {
+        "projectTitle": "",
+        "projectlocation": {
+          "building": "",
+          "roomNumber": ""
+        }
+      }
+    ],
+    "cblCourses": [
+      {
+        "courseName": "",
+        "partners": [
+          {
+            "name": "",
+            "url": "",
+            "location": "",
+            "latlng": {
+              "type": "Point",
+              "coordinates": []
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "563b80dce9462a36c33a96ba",
+    "firstname": "",
+    "lastname": "",
+    "location": {
+      "building": "",
+      "roomNumber": "",
+      "latlng": {
+        "type": "Point",
+        "coordinates": []
+      }
+    },
+    "interestAreas": [],
+    "researchProjects": [
+      {
+        "projectTitle": "",
+        "projectlocation": {
+          "building": "",
+          "roomNumber": ""
+        }
+      }
+    ],
+    "cblCourses": [
+      {
+        "courseName": "",
+        "partners": [
+          {
+            "name": "",
+            "url": "",
+            "location": "",
+            "latlng": {
+              "type": "Point",
+              "coordinates": []
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "563b80dc50afbafd34f39a6a",
+    "firstname": "",
+    "lastname": "",
+    "location": {
+      "building": "",
+      "roomNumber": "",
+      "latlng": {
+        "type": "Point",
+        "coordinates": []
+      }
+    },
+    "interestAreas": [],
+    "researchProjects": [
+      {
+        "projectTitle": "",
+        "projectlocation": {
+          "building": "",
+          "roomNumber": ""
+        }
+      }
+    ],
+    "cblCourses": [
+      {
+        "courseName": "",
+        "partners": [
+          {
+            "name": "",
+            "url": "",
+            "location": "",
+            "latlng": {
+              "type": "Point",
+              "coordinates": []
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "563b80dcc0bdab782023b6e1",
+    "firstname": "",
+    "lastname": "",
+    "location": {
+      "building": "",
+      "roomNumber": "",
+      "latlng": {
+        "type": "Point",
+        "coordinates": []
+      }
+    },
+    "interestAreas": [],
+    "researchProjects": [
+      {
+        "projectTitle": "",
+        "projectlocation": {
+          "building": "",
+          "roomNumber": ""
+        }
+      }
+    ],
+    "cblCourses": [
+      {
+        "courseName": "",
+        "partners": [
+          {
+            "name": "",
+            "url": "",
+            "location": "",
+            "latlng": {
+              "type": "Point",
+              "coordinates": []
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "563b80dcfc6d2c9370429740",
+    "firstname": "",
+    "lastname": "",
+    "location": {
+      "building": "",
+      "roomNumber": "",
+      "latlng": {
+        "type": "Point",
+        "coordinates": []
+      }
+    },
+    "interestAreas": [],
+    "researchProjects": [
+      {
+        "projectTitle": "",
+        "projectlocation": {
+          "building": "",
+          "roomNumber": ""
+        }
+      }
+    ],
+    "cblCourses": [
+      {
+        "courseName": "",
+        "partners": [
+          {
+            "name": "",
+            "url": "",
+            "location": "",
+            "latlng": {
+              "type": "Point",
+              "coordinates": []
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "563b80dcaf43b60d062b9c36",
+    "firstname": "",
+    "lastname": "",
+    "location": {
+      "building": "",
+      "roomNumber": "",
+      "latlng": {
+        "type": "Point",
+        "coordinates": []
+      }
+    },
+    "interestAreas": [],
+    "researchProjects": [
+      {
+        "projectTitle": "",
+        "projectlocation": {
+          "building": "",
+          "roomNumber": ""
+        }
+      }
+    ],
+    "cblCourses": [
+      {
+        "courseName": "",
+        "partners": [
+          {
+            "name": "",
+            "url": "",
+            "location": "",
+            "latlng": {
+              "type": "Point",
+              "coordinates": []
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "563b80dc5233741f021bfbca",
+    "firstname": "",
+    "lastname": "",
+    "location": {
+      "building": "",
+      "roomNumber": "",
+      "latlng": {
+        "type": "Point",
+        "coordinates": []
+      }
+    },
+    "interestAreas": [],
+    "researchProjects": [
+      {
+        "projectTitle": "",
+        "projectlocation": {
+          "building": "",
+          "roomNumber": ""
+        }
+      }
+    ],
+    "cblCourses": [
+      {
+        "courseName": "",
+        "partners": [
+          {
+            "name": "",
+            "url": "",
+            "location": "",
+            "latlng": {
+              "type": "Point",
+              "coordinates": []
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "563b80dce0d0bcb29875d398",
+    "firstname": "",
+    "lastname": "",
+    "location": {
+      "building": "",
+      "roomNumber": "",
+      "latlng": {
+        "type": "Point",
+        "coordinates": []
+      }
+    },
+    "interestAreas": [],
+    "researchProjects": [
+      {
+        "projectTitle": "",
+        "projectlocation": {
+          "building": "",
+          "roomNumber": ""
+        }
+      }
+    ],
+    "cblCourses": [
+      {
+        "courseName": "",
+        "partners": [
+          {
+            "name": "",
+            "url": "",
+            "location": "",
+            "latlng": {
+              "type": "Point",
+              "coordinates": []
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "563b80dc307f52e47938e520",
+    "firstname": "",
+    "lastname": "",
+    "location": {
+      "building": "",
+      "roomNumber": "",
+      "latlng": {
+        "type": "Point",
+        "coordinates": []
+      }
+    },
+    "interestAreas": [],
+    "researchProjects": [
+      {
+        "projectTitle": "",
+        "projectlocation": {
+          "building": "",
+          "roomNumber": ""
+        }
+      }
+    ],
+    "cblCourses": [
+      {
+        "courseName": "",
+        "partners": [
+          {
+            "name": "",
+            "url": "",
+            "location": "",
+            "latlng": {
+              "type": "Point",
+              "coordinates": []
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "563b80dc351a4b89b81a62be",
+    "firstname": "",
+    "lastname": "",
+    "location": {
+      "building": "",
+      "roomNumber": "",
+      "latlng": {
+        "type": "Point",
+        "coordinates": []
+      }
+    },
+    "interestAreas": [],
+    "researchProjects": [
+      {
+        "projectTitle": "",
+        "projectlocation": {
+          "building": "",
+          "roomNumber": ""
+        }
+      }
+    ],
+    "cblCourses": [
+      {
+        "courseName": "",
+        "partners": [
+          {
+            "name": "",
+            "url": "",
+            "location": "",
+            "latlng": {
+              "type": "Point",
+              "coordinates": []
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "563b80dcc126ba5dc88c9ef8",
+    "firstname": "",
+    "lastname": "",
+    "location": {
+      "building": "",
+      "roomNumber": "",
+      "latlng": {
+        "type": "Point",
+        "coordinates": []
+      }
+    },
+    "interestAreas": [],
+    "researchProjects": [
+      {
+        "projectTitle": "",
+        "projectlocation": {
+          "building": "",
+          "roomNumber": ""
+        }
+      }
+    ],
+    "cblCourses": [
+      {
+        "courseName": "",
+        "partners": [
+          {
+            "name": "",
+            "url": "",
+            "location": "",
+            "latlng": {
+              "type": "Point",
+              "coordinates": []
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "563b80dc6e5db00b95b1938e",
+    "firstname": "",
+    "lastname": "",
+    "location": {
+      "building": "",
+      "roomNumber": "",
+      "latlng": {
+        "type": "Point",
+        "coordinates": []
+      }
+    },
+    "interestAreas": [],
+    "researchProjects": [
+      {
+        "projectTitle": "",
+        "projectlocation": {
+          "building": "",
+          "roomNumber": ""
+        }
+      }
+    ],
+    "cblCourses": [
+      {
+        "courseName": "",
+        "partners": [
+          {
+            "name": "",
+            "url": "",
+            "location": "",
+            "latlng": {
+              "type": "Point",
+              "coordinates": []
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "563b80dce7ad2f4e328d51ea",
+    "firstname": "",
+    "lastname": "",
+    "location": {
+      "building": "",
+      "roomNumber": "",
+      "latlng": {
+        "type": "Point",
+        "coordinates": []
+      }
+    },
+    "interestAreas": [],
+    "researchProjects": [
+      {
+        "projectTitle": "",
+        "projectlocation": {
+          "building": "",
+          "roomNumber": ""
+        }
+      }
+    ],
+    "cblCourses": [
+      {
+        "courseName": "",
+        "partners": [
+          {
+            "name": "",
+            "url": "",
+            "location": "",
+            "latlng": {
+              "type": "Point",
+              "coordinates": []
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "563b80dcc98269975ecb40b8",
+    "firstname": "",
+    "lastname": "",
+    "location": {
+      "building": "",
+      "roomNumber": "",
+      "latlng": {
+        "type": "Point",
+        "coordinates": []
+      }
+    },
+    "interestAreas": [],
+    "researchProjects": [
+      {
+        "projectTitle": "",
+        "projectlocation": {
+          "building": "",
+          "roomNumber": ""
+        }
+      }
+    ],
+    "cblCourses": [
+      {
+        "courseName": "",
+        "partners": [
+          {
+            "name": "",
+            "url": "",
+            "location": "",
+            "latlng": {
+              "type": "Point",
+              "coordinates": []
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

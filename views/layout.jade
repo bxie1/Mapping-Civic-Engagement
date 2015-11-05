@@ -6,7 +6,39 @@ html
         link(rel='stylesheet', href='/stylesheets/style.css')
 
     body
-        #map_canvas
+        header(role='banner')
+            h1.center Civic Engagement Mapping
+        div.container
+            div.clearfix
+                #filters.col.col-3.p2
+                    h2 Filter by Issue
+                    form#options-menu
+                        fieldset#tags
+                            section
+                                div.p1.js-filter-tags
+                                    div
+                                        label.block
+                                            input(type="checkbox", name="Environmental Protection" value="Environmental Protection" checked="check")
+                                            | Environmental Protection
+                                        label.block
+                                            input(type="checkbox", name="Education" value="Education" checked="check")
+                                            | Education
+                                        label.block
+                                            input(type="checkbox", name="Social Innovation" value="Social Innovation" checked="check")
+                                            | Social Innovation
+                                        label.block
+                                            input(type="checkbox", name="Arts and Social Change" value="Arts and Social Change" checked="check")
+                                            | Arts and Social Change
+                                        label.block
+                                            input(type="checkbox", name="Race and Justice" value="Race and Justice" checked="check")
+                                            | Race and Justice
+                                        label.block
+                                            input(type="checkbox", name="Political Participation" value="Political Participation" checked="check")
+                                            | Political Participation
+                        div.py2
+                            button#apply.m1.btn.btn-primary(type="button") Apply Settings
+                div.col.col-9
+                    #map_canvas
         block content
         script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js')
         script(src='/javascripts/main.js')

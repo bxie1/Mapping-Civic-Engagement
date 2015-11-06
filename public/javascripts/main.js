@@ -31,20 +31,39 @@ function populateMarkers(apiLoc) {
                 map: map,
                 position: new google.maps.LatLng(this.projectlocation.latlng.coordinates[1],this.projectlocation.latlng.coordinates[0]),
                 title: 'Site ' + this.projectTitle,
+                faculty: this.faculty,
                 filters: this.filters,
                 icon: 'http://maps.google.com/mapfiles/ms/icons/red-dot.png'
           });
 
+          //Get array of associated issues
           var tagList = [];
           $.each(marker.filters, function(ind, obj) {
               if (obj) {
                   tagList.push(ind);
               }
           });
+
+          //Get array of associated faculty
+          var facList = [];
+          $.each(marker.faculty, function(ind, obj) {
+              if (obj) {
+                  facList.push(this.firstname + ' ' + this.lastname);
+              }
+          });
+
+          //Add information to display as content
           var content = '<h1 class="mt0"><a href="site/' + marker.title + '">' + marker.title + '</a></h1>';
 
+          $.each(facList, function(inde, obje) {
+                content = content + 'Faculty: <a href="faculty/' + obje + '">' + obje + '</a>';
+                if (facList.indexOf(obje) < facList.length - 1) {
+                    content = content + ',';
+                }
+            });
+
           $.each(tagList, function(inde, obje) {
-                content = content + ' <a href="issue/' + obje + '">' + obje + '</a>';
+                content = content + 'Issues: <a href="issue/' + obje + '">' + obje + '</a>';
                 if (tagList.indexOf(obje) < tagList.length - 1) {
                     content = content + ',';
                 }

@@ -1,5 +1,5 @@
 var markers = [];
-
+var currentInfoWindow;
 
 // DOM Ready =============================================================
 $(document).ready(function() {
@@ -29,10 +29,38 @@ function populateMarkers(apiLoc) {
         $.each(data, function(i, ob) {
           var marker = new google.maps.Marker({
                 map: map,
-                position: new google.maps.LatLng(this.loc.coordinates[1],this.loc.coordinates[0]),
-                title: 'Site ' + this.name,
+                position: new google.maps.LatLng(this.projectlocation.latlng.coordinates[1],this.projectlocation.latlng.coordinates[0]),
+                title: 'Site ' + this.projectTitle,
+                filters: this.filters,
                 icon: 'http://maps.google.com/mapfiles/ms/icons/red-dot.png'
           });
+
+          var tagList = [];
+          $.each(marker.filters, function(ind, obj) {
+              if (obj) {
+                  tagList.push(ind);
+              }
+          });
+          var content = '<h1 class="mt0"><a href="site/' + marker.title + '">' + marker.title + '</a></h1>';
+
+          $.each(tagList, function(inde, obje) {
+                content = content + ' <a href="issue/' + obje + '">' + obje + '</a>';
+                if (tagList.indexOf(obje) < tagList.length - 1) {
+                    content = content + ',';
+                }
+            });
+
+          marker.infowindow = new google.maps.InfoWindow({
+                content: content,
+                maxWidth: 400
+          });
+
+          google.maps.event.addListener(marker, 'click', function() {
+                if (currentInfoWindow) currentInfoWindow.close();
+                marker.infowindow.open(map, marker);
+                currentInfoWindow = marker.infowindow;
+          });
+
           markers.push(marker);
         });
 

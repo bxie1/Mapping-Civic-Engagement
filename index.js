@@ -28,4 +28,4 @@ app.get('/api/v1/', function(req,res){
   });
 });
 
-app.listen(3000)
+app.listen(config.listen)

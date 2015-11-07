@@ -85,3 +85,18 @@ function populateMarkers(apiLoc) {
 
     });
 };
+
+$("#apply").click(function() {
+    //Closes any open infowindows
+    if (currentInfoWindow) currentInfoWindow.close();
+    var applyPath = '/api/v1/applytags/';
+    for (var i = 0; i < markers.length; i++) {
+        markers[i].setVisible(false);
+    }
+    markers = [];
+    $('#tags input:checked').each(function() {
+        applyPath = applyPath + $(this).prop('value') + '&';
+    });
+    console.log(applyPath);
+    populateMarkers(applyPath);
+});

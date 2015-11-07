@@ -14,6 +14,7 @@
     {
     "firstname": "Valdez",
     "lastname": "Trujillo",
+    "email": "vtrujil1@swarthmore.edu",
     "location":
       {
         "building": "Beardsley Hall",
@@ -48,6 +49,58 @@
   "Arts and Social Change": 0,
   "Race and Justice": 0,
   "Political Participation": 0
+}
+},
+{
+  "_id": "563cbb1cd1ce29d941145e65",
+  "projectTitle": "Project 2",
+  "projectlocation": {
+    "building": "Trotter Hall",
+    "roomNumber": 74,
+    "latlng": {
+      "type": "Point",
+      "coordinates": [-75.353926,39.906432]
+    }
+  },
+  "faculty": [
+  {
+  "firstname": "Sam",
+  "lastname": "Smith",
+  "email": "ssmith1@swarthmore.edu",
+  "location":
+    {
+      "building": "Beardsley Hall",
+      "roomNumber": 29,
+      "latlng": {
+        "type": "Point",
+        "coordinates": [-75.3569305,39.906469]
+      }
+    },
+  "cblCourses": [
+    {
+      "courseName": "Course 001",
+      "partners": [
+        {
+          "name": "Partner 1",
+          "url": "#",
+          "location": "Philadelphia",
+          "latlng": {
+            "type": "Point",
+            "coordinates": [-75.2584614,40.004931]
+          }
+        }
+      ]
+    }
+  ]
+}
+],
+"filters": {
+"Environmental Protection": 0,
+"Education": 0,
+"Social Innovation": 1,
+"Arts and Social Change": 0,
+"Race and Justice": 0,
+"Political Participation": 0
 }
 }
 ]

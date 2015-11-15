@@ -86,6 +86,13 @@ function populateMarkers(apiLoc) {
     });
 };
 
+$("#courses_select").change(function(){
+    
+    var x = $("#courses_select").val();
+    $("#course_list_div").html( "You selected: " + x);
+});
+
+
 $("#apply").click(function() {
     //Closes any open infowindows
     if (currentInfoWindow) currentInfoWindow.close();

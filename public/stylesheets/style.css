@@ -3,6 +3,12 @@ html,body,#map_canvas{
 	margin:0;
 	padding:0;
 }
+.botmodule{
+	min-height: 300px;
+	padding:10px;
+	
+}
+
 .container{
 	height: 80%;
 	max-width: 100%;

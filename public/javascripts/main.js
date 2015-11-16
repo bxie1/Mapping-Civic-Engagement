@@ -13,7 +13,7 @@ function initialize() {
     var center = new google.maps.LatLng(39.9051851,-75.3542644);
 
     var mapOptions = {
-        zoom: 17,
+        zoom: 16,
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         center: center,
     };
@@ -85,6 +85,13 @@ function populateMarkers(apiLoc) {
 
     });
 };
+
+$("#courses_select").change(function(){
+    
+    var x = $("#courses_select").val();
+    $("#course_list_div").html( "You selected: " + x);
+});
+
 
 $("#apply").click(function() {
     //Closes any open infowindows

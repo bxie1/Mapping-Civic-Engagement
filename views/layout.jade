@@ -39,6 +39,28 @@ html
                             button#apply.m1.btn.btn-primary(type="button") Apply Settings
                 div.col.col-9
                     #map_canvas
+        div#option_modules_container
+            div.botmodule.col.col-4#eng_by_location
+                input(type="text" placeholder="Enter Location")
+                p Engagement by Location
+            div.botmodule.col.col-4#course_by_issues
+                select#courses_select
+                    option(value="Environmental Protection") Environmental Protection
+                    option(value="Education") Education
+                    option(value="Social Innovation") Social Innovation
+                    option(value="Arts and Social Change") Arts and Social Change
+                    option(value="Race and Justice") Race and Justice
+                    option(value="Political Participation") Political Participation
+                div#course_list_div CBL Courses by Issues
+            div.botmodule.col.col-4#eng_opportunities
+                select
+                    option Environmental Protection
+                    option Education
+                    option Social Innovation
+                    option Arts and Social Change
+                    option Race and Justice
+                    option Political Participation
+                P Engagement Opportunities
         block content
         script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js')
         script(src='/javascripts/main.js')

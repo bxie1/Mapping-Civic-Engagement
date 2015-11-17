@@ -30,7 +30,7 @@ function populateMarkers(apiLoc) {
           var marker = new google.maps.Marker({
                 map: map,
                 position: new google.maps.LatLng(this.projectlocation.latlng.coordinates[1],this.projectlocation.latlng.coordinates[0]),
-                title: 'Site ' + this.projectTitle,
+                title: this.projectTitle,
                 faculty: this.faculty,
                 filters: this.filters,
                 icon: 'http://maps.google.com/mapfiles/ms/icons/red-dot.png'

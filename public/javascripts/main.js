@@ -55,16 +55,16 @@ function populateMarkers(apiLoc) {
           //Add information to display as content
           var content = '<h1 class="mt0"><a href="site/' + marker.title + '">' + marker.title + '</a></h1>';
 
-          $.each(facList, function(inde, obje) {
-                content = content + 'Faculty: <a href="faculty/' + obje + '">' + obje + '</a>';
-                if (facList.indexOf(obje) < facList.length - 1) {
+          $.each(tagList, function(inde, obje) {
+                content = content + '<div>Issue Area: <a href="issue/' + obje + '">' + obje + '</a></div>';
+                if (tagList.indexOf(obje) < tagList.length - 1) {
                     content = content + ',';
                 }
             });
 
-          $.each(tagList, function(inde, obje) {
-                content = content + 'Issues: <a href="issue/' + obje + '">' + obje + '</a>';
-                if (tagList.indexOf(obje) < tagList.length - 1) {
+          $.each(facList, function(inde, obje) {
+                content = content + '<div>Faculty: <a href="faculty/' + obje + '">' + obje + '</a></div>';
+                if (facList.indexOf(obje) < facList.length - 1) {
                     content = content + ',';
                 }
             });
@@ -87,7 +87,7 @@ function populateMarkers(apiLoc) {
 };
 
 $("#courses_select").change(function(){
-    
+
     var x = $("#courses_select").val();
     $("#course_list_div").html( "You selected: " + x);
 });

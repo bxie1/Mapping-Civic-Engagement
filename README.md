@@ -5,8 +5,9 @@ Local map of faculty who have civic engagement projects / courses.
 
 - Node.JS
 - Express
-- Jade
 - MongoDB
+- [Jade](http://jade-lang.com/)
+- [Basscss](http://www.basscss.com/)
 
 ## Development Instructions
 

@@ -34,7 +34,7 @@ app.get('/api/v1/applytags/:tag',function(req,res){
    var query = [];
    for (var i = 0; i < taglist.length; i++) {
      var tmpquery = {};
-     var key = 'filters.' + taglist[i];
+     var key = 'issueFilters.' + taglist[i];
      var val = 1;
      tmpquery[key] = val;
      query.push(tmpquery);

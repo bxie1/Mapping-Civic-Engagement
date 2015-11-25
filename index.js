@@ -28,6 +28,22 @@ app.get('/api/v1/', function(req,res){
   });
 });
 
+app.get('/api/v1/:id', function(req,res){
+  var docID = req.params.id;
+  var query = {};
+  var key = '_id';
+  var val = docID;
+  query[key] = val;
+  MongoClient.connect(config.dbUrl, function(err, db) {
+    assert.equal(null, err);
+    console.log(query);
+    db.collection('locations').find(query).toArray(function(err, docs) {
+        res.json(docs);
+        db.close();
+    });
+  });
+});
+
 app.get('/api/v1/applytags/:tag',function(req,res){
    var taglist = req.params.tag;
    taglist = taglist.split('&');

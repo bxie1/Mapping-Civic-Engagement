@@ -30,6 +30,7 @@ function populateMarkers(apiLoc) {
           var marker = new google.maps.Marker({
                 map: map,
                 position: new google.maps.LatLng(this.faculty.location.latlng.coordinates[1],this.faculty.location.latlng.coordinates[0]),
+                id: this._id,
                 title: this.projectTitle,
                 faculty: this.faculty.firstname + ' ' + this.faculty.lastname,
                 email: this.faculty.email,
@@ -70,6 +71,9 @@ function populateMarkers(apiLoc) {
             });
             content = content + '</ul></div>'
           }
+
+          content += '<a href="/api/v1/'+ marker.id +'">More</a>';
+
           // $.each(facList, function(inde, obje) {
           //       content = content + '<div>Faculty: <a href="faculty/' + obje + '">' + obje + '</a></div>';
           //       if (facList.indexOf(obje) < facList.length - 1) {

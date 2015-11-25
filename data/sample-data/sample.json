@@ -1,106 +1,106 @@
 [
   {
     "_id": "563cbb1cd1ce29d941145e73",
-    "projectTitle": "Project 1",
-    "projectlocation": {
-      "building": "Beardsley Hall",
-      "roomNumber": 74,
-      "latlng": {
-        "type": "Point",
-        "coordinates": [-75.354724,39.906461]
-      }
-    },
-    "faculty": [
-    {
-    "firstname": "Valdez",
-    "lastname": "Trujillo",
-    "email": "vtrujil1@swarthmore.edu",
-    "location":
+    "research":[
       {
-        "building": "Beardsley Hall",
-        "roomNumber": 29,
-        "latlng": {
-          "type": "Point",
-          "coordinates": [-75.3569305,39.906469]
-        }
-      },
-    "cblCourses": [
-      {
-        "courseName": "Course 001",
-        "partners": [
-          {
-            "name": "Partner 1",
-            "url": "#",
-            "location": "Philadelphia",
-            "latlng": {
-              "type": "Point",
-              "coordinates": [-75.2584614,40.004931]
-            }
-          }
-        ]
-      }
-    ]
-  }
-],
-"filters": {
-  "Environmental Protection": 0,
-  "Education": 1,
-  "Social Innovation": 0,
-  "Arts and Social Change": 0,
-  "Race and Justice": 0,
-  "Political Participation": 0
-}
-},
-{
-  "_id": "563cbb1cd1ce29d941145e65",
-  "projectTitle": "Project 2",
-  "projectlocation": {
-    "building": "Trotter Hall",
-    "roomNumber": 74,
-    "latlng": {
-      "type": "Point",
-      "coordinates": [-75.353926,39.906432]
-    }
-  },
-  "faculty": [
-  {
-  "firstname": "Sam",
-  "lastname": "Smith",
-  "email": "ssmith1@swarthmore.edu",
-  "location":
-    {
-      "building": "Beardsley Hall",
-      "roomNumber": 29,
-      "latlng": {
-        "type": "Point",
-        "coordinates": [-75.3569305,39.906469]
-      }
-    },
-  "cblCourses": [
-    {
-      "courseName": "Course 001",
-      "partners": [
-        {
-          "name": "Partner 1",
-          "url": "#",
-          "location": "Philadelphia",
+        "projectTitle": "Policy Plus: African Economic Growth 1960-2000",
+        "projectlocation": {
           "latlng": {
             "type": "Point",
-            "coordinates": [-75.2584614,40.004931]
+            "coordinates": [-75.354724,39.906461]
           }
         }
-      ]
-    }
-  ]
-}
-],
-"filters": {
-"Environmental Protection": 0,
-"Education": 0,
-"Social Innovation": 1,
-"Arts and Social Change": 0,
-"Race and Justice": 0,
-"Political Participation": 0
+      },
+      {
+        "projectTitle": "Opportunities and Choices",
+        "projectlocation": {
+          "latlng": {
+            "type": "Point",
+            "coordinates": [-75.354724,39.906461]
+          }
+        }
+      },
+      {
+        "projectTitle": "The Political Economy of Control Regimes",
+        "projectlocation": {
+          "latlng": {
+            "type": "Point",
+            "coordinates": [-75.354724,39.906461]
+          }
+        }
+      },
+      {
+        "projectTitle": "Why Has Burundi Grown So Slowly",
+        "projectlocation": {
+          "latlng": {
+            "type": "Point",
+            "coordinates": [-75.354724,39.906461]
+          }
+        }
+      },
+      {
+        "projectTitle": "Explaining African Economic Growth",
+        "projectlocation": {
+          "latlng": {
+            "type": "Point",
+            "coordinates": [-75.354724,39.906461]
+          }
+        }
+      }
+    ],
+    "faculty":
+    {
+    "firstname": "Stephen",
+    "lastname": "O’Connell",
+    "email": "soconne1@swarthmore.edu",
+    "location":
+    {
+        "building": "Kohlberg",
+        "roomNumber": 205,
+        "latlng": {
+          "type": "Point",
+          "coordinates": [-75.354836,39.905883]
+        }
+    },
+    "cblCourses": [
+      {
+        "courseName": "FYS: The BRICS",
+        "courseID": "Econ 002"
+      },
+      {
+        "courseName": "Political Economy of Africa",
+        "courseID": "Econ 082"
+      },
+      {
+        "courseName": "Seminar in Economic Development",
+        "courseID": "Econ 181"
+      },
+      {
+        "courseName": "Economic Development",
+        "courseID": "Econ 081"
+      },
+      {
+        "courseName": "Seminar in Advanced Macroeconomics",
+        "courseID": "Econ 102"
+      },
+      {
+        "courseName": "Introduction to Economics",
+        "courseID": "Econ 001"
+      }
+    ]
+  },
+"issueFilters": {
+  "Environmental Protection": 0,
+  "Education": 0,
+  "Social Innovation": 1,
+  "Arts and Social Change": 0,
+  "Race and Justice": 0,
+  "Political Participation":0
+},
+"researchThemes": {
+  "Macroeconomics": 1,
+  "International Trade": 1,
+  "Economic Development": 1
 }
 }
 ]

@@ -3,6 +3,7 @@ var assert = require('assert');
 var express = require('express');
 var path = require('path');
 var config = require('./config');
+var ObjectID = require('mongodb').ObjectID;
 
 //var dbUrl = 'mongodb://localhost:27017/sse';
 
@@ -29,7 +30,7 @@ app.get('/api/v1/', function(req,res){
 });
 
 app.get('/api/v1/:id', function(req,res){
-  var docID = req.params.id;
+  var docID = ObjectID(req.params.id);
   var query = {};
   var key = '_id';
   var val = docID;

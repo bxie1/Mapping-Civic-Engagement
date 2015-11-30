@@ -1,6 +1,5 @@
 [
   {
-    "_id": "563cbb1cd1ce29d941145e73",
     "research":[
       {
         "projectTitle": "Policy Plus: African Economic Growth 1960-2000",
@@ -101,6 +100,402 @@
   "Macroeconomics": 1,
   "International Trade": 1,
   "Economic Development": 1
+}
+},
+{
+  "research":[
+    {
+      "projectTitle": "Appropiating Technology: Vernacular Science, Politics, and Environmental Justice"
+    },
+    {
+      "projectTitle": "Embodied Ecologies: Science, Politics, and Environmental Justice"
+    }
+  ],
+  "faculty":
+  {
+  "firstname": "Giovanna",
+  "lastname": "Di Chiro",
+  "email": "gdichir2@swarthmore.edu",
+  "location":
+  {
+      "building": "Lang Center",
+      "roomNumber": 210,
+      "latlng": {
+        "type": "Point",
+        "coordinates": [-75.353948,39.908176]
+      }
+  },
+  "cblCourses": [
+    {
+      "courseName": "Environmental Justice: Theory & Action",
+      "courseID": "POLS 043B"
+    },
+    {
+      "courseName": "Race, Gender, Class and Environment",
+      "courseID": "ENGL 089",
+      "crossListedID": "SOAN020M"
+    }
+  ]
+},
+"issueFilters": {
+"Arts and Culture for Social Change": 0,
+"Education": 0,
+"Environment Food and Sustainability": 1,
+"Gender and Sexuality": 1,
+"Political Engagement and Public Policy": 0,
+"Race Class and Inequality": 1,
+"Social Innovation": 1,
+"Peace and Conflict Studies": 0,
+"Health and Societies": 1
+}
+},
+{
+  "research":[
+    {
+      "projectTitle": "Undocumented status and schooling for newcomer teens",
+        "projectlink":"",
+        "projectLinkText":"Harvard Educational Review"
+    },
+    {
+      "projectTitle": "Latecomers: Exploring the antecedents of late arrival among emergent bilinguals in secondary schools"
+    },
+    {
+      "projectTitle": "Immigrant Spanish as liability or asset: Generational diversity in language ideologies at school",
+      "projectlink":"",
+      "projectLinkText":"Journal of Language Identity and Education"
+    },
+    {
+      "projectTitle": "Conflicting Ideologies of Mexican Immigrant English across Levels of Schooling",
+      "projectlink":"",
+      "projectLinkText":"International Multilingual Research Journal"
+    }
+  ],
+  "faculty":
+  {
+  "firstname": "Elaine",
+  "lastname": "Allard",
+  "email": "eallard1@swarthmore.edu",
+  "title": "Professor",
+  "department": "Education Studies",
+  "location":
+  {
+      "building": "Pearson Hall",
+      "roomNumber": 203,
+      "latlng": {
+        "type": "Point",
+        "coordinates": [-75.353599, 39.9069]
+      }
+  },
+  "cblCourses": [
+    {
+      "courseName": "Language Minority Education",
+      "courseID": "EDUC 53",
+      "crossListedID": "LING 053"
+    },
+    {
+      "courseName": "Latinos and Education",
+      "courseID": "EDUC 153"
+    },
+    {
+      "courseName": "Educational Research for Social Change",
+      "courseID": "EDUC 65"
+    },
+    {
+      "courseName": "Intro to Education",
+      "courseID": "EDUC 014"
+    }
+  ]
+},
+"issueFilters": {
+"Arts and Culture for Social Change": 0,
+"Education": 1,
+"Environment Food and Sustainability": 0,
+"Gender and Sexuality": 1,
+"Political Engagement and Public Policy": 0,
+"Race Class and Inequality": 1,
+"Social Innovation": 1,
+"Peace and Conflict Studies": 0,
+"Health and Societies": 0
+}
+},
+{
+  "research":[
+    {
+      "projectTitle": "Project Director Center for Social & Policy Studies"
+    },
+    {
+      "projectTitle": "Multi-City Survey of Urban Inequality (MCSUI): Study Influences of Racial Attitudes, Employer Attitudes, Housing Experiences, Labor Market Dynamics of Urban Inequality"
+    },
+    {
+      "projectTitle": "Washington Post/Kaiser Family Foundation/Harvard University National Survey Project on Race: Policy & Survey Search Assistance"
+    },
+    {
+      "projectTitle": "Chester Collaborative"
+    },
+    {
+      "projectTitle": "Voting Hopes or Fears?: White Voters, Black Candidates, and Racial Politics in America"
+    },
+    {
+      "projectTitle": "The Problem of Proximity: Black Male Incarceration and the Urban Environment"
+    }
+  ],
+  "faculty":
+  {
+  "firstname": "Keith",
+  "lastname": "Reeves",
+  "email": "kreeves1@swarthmore.edu",
+  "title": "Associate Professor and Department Chair",
+  "department": "Political Science",
+  "location":
+  {
+      "building": "Trotter ",
+      "roomNumber": 310,
+      "latlng": {
+        "type": "Point",
+        "coordinates": [-75.353926, 39.906432]
+      }
+  },
+  "cblCourses": [
+    {
+      "courseName": "Inside-Out Exchange Program: Mass Incarceration in Chester PA"
+    }
+  ]
+},
+"issueFilters": {
+"Arts and Culture for Social Change": 0,
+"Education": 1,
+"Environment Food and Sustainability": 0,
+"Gender and Sexuality": 0,
+"Political Engagement and Public Policy": 1,
+"Race Class and Inequality": 1,
+"Social Innovation": 0,
+"Peace and Conflict Studies": 0,
+"Health and Societies": 0
+}
+},
+{
+  "research":[
+    {
+      "projectTitle": "Living Tongues: Institutes for Endangered Languages. Enduring Voices Project Fieldwork 2010"
+
+    },
+    {
+      "projectTitle": "Living Tongues: Institutes for Endangered Languages. Enduring Voices Project Fieldwork 2011"
+    },
+    {
+      "projectTitle": "Living Tongues: Institutes for Endangered Languages. Enduring Voices Project Fieldwork 2011"
+    },
+    {
+      "projectTitle": "Living Tongues: Institutes for Endangered Languages. Enduring Voices Project Fieldwork 2010"
+    },
+    {
+      "projectTitle": "Living Tongues: Institutes for Endangered Languages. Enduring Voices Project Fieldwork 2009"
+
+    },
+    {
+      "projectTitle": "Living Tongues: Institutes for Endangered Languages. Enduring Voices Project Fieldwork 2009"
+    },
+    {
+      "projectTitle": "Living Tongues: Institutes for Endangered Languages. Enduring Voices Project Fieldwork 2008"
+    },
+    {
+      "projectTitle": "Living Tongues: Institutes for Endangered Languages. Enduring Voices Project Fieldwork 2008"
+    },
+    {
+      "projectTitle": "Living Tongues: Institutes for Endangered Languages. Enduring Voices Project Fieldwork 2007"
+
+    },
+    {
+      "projectTitle": "When Languages Die: The Extinction of the World’s Languages and the Erosion of Human Knowledge. 2007. Oxford University Press"
+    }
+  ],
+  "faculty":
+  {
+  "firstname": "K. David",
+  "lastname": "Harrison",
+  "email": "dharris2@swarthmore.edu",
+  "title": "Professor",
+  "department": "Linguistics",
+  "location":
+  {
+      "building": "Pearson Hall",
+      "roomNumber": 101,
+      "latlng": {
+        "type": "Point",
+        "coordinates": [-75.353599, 39.906883]
+      }
+  },
+  "cblCourses": [
+    {
+      "courseName": "Introduction to Cognitive Science"
+    },
+    {
+      "courseName": "Introduction to Linguistics"
+    },
+    {
+      "courseName": "What Gay Sounds Like: Linguistics of LGBTQ Communities"
+    },
+    {
+      "courseName": "Languages of the World"
+    },
+    {
+      "courseName": "Morphology and the Lexicon"
+    },
+    {
+      "courseName": "Phonetics & Phonology"
+    },
+    {
+      "courseName": "Field Methods"
+    },
+    {
+      "courseName": "Structure of Tuvan"
+    },
+    {
+      "courseName": "Anthropological Linguistics / Linguistic Anthropology"
+    },
+    {
+      "courseName": "Senior Thesis Seminar"
+    }
+  ]
+},
+"issueFilters": {
+"Arts and Culture for Social Change": 0,
+"Education": 1,
+"Environment Food and Sustainability": 0,
+"Gender and Sexuality": 1,
+"Political Engagement and Public Policy": 0,
+"Race Class and Inequality": 1,
+"Social Innovation": 0,
+"Peace and Conflict Studies": 0,
+"Health and Societies": 0
+}
+},
+{
+  "research":[
+    {
+      "projectTitle": "A Long Way From Home: Race, Mobility and Residential Choice"
+    },
+    {
+      "projectTitle": "Black Privilege?: Status and Stigma in the Case of Black Educational Elites"
+    },
+    {
+      "projectTitle": "Mama (Never) Said There'd Be Days Like This: Towards A Politics of Contemporary Black(Elite)ness"
+    },
+    {
+      "projectTitle": "Talented Tenth or Black Bourgeoisie?: Black Educational Elites in the Twenty-First Century"
+    }
+  ],
+  "faculty":
+  {
+  "firstname": "Nina",
+  "lastname": "Johnson",
+  "email": "njohnso1@swarthmore.edu",
+  "title": "Professor",
+  "department": "Sociology & Anthropology, Black Studies",
+  "location":
+  {
+      "building": "Kohlberg",
+      "roomNumber": 243,
+      "latlng": {
+        "type": "Point",
+        "coordinates": [-75.354836, 39.9059]
+      }
+  },
+  "cblCourses": [
+    {
+      "courseName": "Introduction to Race and Ethnicity",
+      "courseID": "SOAN 007"
+    },
+    {
+      "courseName": "Black Social and Political Thought",
+      "courseID": "SOAN 040G",
+      "crossListedID": "BLST 040G"
+    }
+  ]
+},
+"issueFilters": {
+"Arts and Culture for Social Change": 0,
+"Education": 0,
+"Environment Food and Sustainability": 0,
+"Gender and Sexuality": 1,
+"Political Engagement and Public Policy": 1,
+"Race Class and Inequality": 1,
+"Social Innovation": 0,
+"Peace and Conflict Studies": 0,
+"Health and Societies": 0
+}
+},
+{
+  "research":[
+    {
+      "projectTitle": "Compressible MHD turbulence theory, Study of Density Fluctuation Spectra and Treatment of compressibility as a small parameter"
+    },
+    {
+      "projectTitle": "Design, construction and operation of a spheromak accelerator for the purposes of tokamak refueling"
+    },
+    {
+      "projectTitle": "U. S. Department of Energy Fusion Energy Postdoctoral Research Fellow"
+    },
+    {
+      "projectTitle": "Three- dimensional Reconnection and Relaxation of Merging Spheromak Plasmas"
+    },
+    {
+      "projectTitle": "Spectroscopic Measurements of Temperature and Plasma Impurity Concentration During Magnetic Reconnection at the Swarthmore Spheromak Experiment"
+    },
+    {
+      "projectTitle": "Modeling Swarthmore Speromak Reconnection Experiment using Hybrid Code"
+    },
+    {
+      "projectTitle": "Three Dimensional Structure of Magnetic Reconnection in a Laboratory Plasma"
+    },
+    {
+      "projectTitle": "Spheromak Merging and Field Reversed Configuration Formation at the Swarthmore Spheromak Experiment"
+    },
+    {
+      "projectTitle": "Efficiency and Scaling of Current Drive and Refueling by Spheromak Injection into a Tokamak"
+    },
+    {
+      "projectTitle": "Injection of Compact Toroids into Tokamaks for Reactor Refueling"
+    },
+    {
+      "projectTitle": "Tokamak Current Drive and Fueling by Compact Torus Injection and Acceleration of Compact Toroids for Other Fusion Ap- plications"
+    },
+    {
+      "projectTitle": "Magnetic Reconnection in Space and Laboratory Plasmas"
+    }
+  ],
+  "faculty":
+  {
+  "firstname": "Doc",
+  "lastname": "Brown",
+  "email": "doc@swarthmore.edu",
+  "title": "Professor, Department Chair",
+  "department": "Physics",
+  "location":
+  {
+      "building": "Science Center",
+      "roomNumber": 119,
+      "latlng": {
+        "type": "Point",
+        "coordinates": [-75.355421, 39.907009]
+      }
+  },
+  "cblCourses": [
+    {
+      "courseName": "Seminar on Energy"
+    }
+  ]
+},
+"issueFilters": {
+"Arts and Culture for Social Change": 0,
+"Education": 1,
+"Environment Food and Sustainability": 1,
+"Gender and Sexuality": 0,
+"Political Engagement and Public Policy": 0,
+"Race Class and Inequality": 0,
+"Social Innovation": 1,
+"Peace and Conflict Studies": 0,
+"Health and Societies": 1
 }
 }
 ]

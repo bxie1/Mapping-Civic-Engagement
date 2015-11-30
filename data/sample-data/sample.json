@@ -90,12 +90,15 @@
     ]
   },
 "issueFilters": {
-  "Environmental Protection": 0,
+  "Arts and Culture for Social Change": 0,
   "Education": 0,
+  "Environment Food and Sustainability": 0,
+  "Gender and Sexuality": 0,
+  "Political Engagement and Public Policy": 0,
+  "Race Class and Inequality": 0,
   "Social Innovation": 1,
-  "Arts and Social Change": 0,
-  "Race and Justice": 0,
-  "Political Participation":0
+  "Peace and Conflict Studies": 0,
+  "Health and Societies": 0
 },
 "researchThemes": {
   "Macroeconomics": 1,

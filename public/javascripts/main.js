@@ -58,12 +58,17 @@ function populateMarkers(apiLoc) {
           //Add information to display as content
           var content = '<h1 class="mt0"><a href="site/' + marker.faculty + '">' + marker.faculty + '</a></h1><div>Email: <a href="mailto:' + marker.email + '">' + marker.email + '</a></div>';
 
+          content += '<div>Issue Areas:';
+
           $.each(tagList, function(inde, obje) {
-                content = content + '<div>Issue Areas: <a href="issue/' + obje + '">' + obje + '</a></div>';
+                content = content + ' <a href="issue/' + obje + '">' + obje + '</a>';
                 if (tagList.indexOf(obje) < tagList.length - 1) {
                     content = content + ',';
+                } else{
+                  content += '<div>';
                 }
             });
+
           if(projList.length>0){
             content = content + '<div> Research Projects <ul>';
             $.each(projList, function(inde, obje){

@@ -1,6 +1,8 @@
 # Swat-Civic-Engagement-Map
 Local map of faculty who have civic engagement projects / courses.
 
+Demo available on AWS: http://52.70.181.56:3000/
+
 ## Technology Stack
 
 - Node.JS

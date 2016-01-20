@@ -1,3 +1,4 @@
+//TODO_REPLACE all instances of MongoClient
 var MongoClient = require('mongodb').MongoClient;
 var assert = require('assert');
 var express = require('express');
@@ -18,6 +19,7 @@ app.get('/',function(req,res){
   res.render('index', { title: 'Returns all'});
 });
 
+//TODO_REPLACE
 app.get('/api/v1/', function(req,res){
   MongoClient.connect(config.dbUrl, function(err, db) {
     assert.equal(null, err);
@@ -35,6 +37,7 @@ app.get('/api/v1/:id', function(req,res){
   var key = '_id';
   var val = docID;
   query[key] = val;
+  //TODO_REPLACE
   MongoClient.connect(config.dbUrl, function(err, db) {
     assert.equal(null, err);
     console.log(query);
@@ -45,6 +48,7 @@ app.get('/api/v1/:id', function(req,res){
   });
 });
 
+//TODO_REPLACE. We're getting from wordpress now
 app.get('/api/v1/applytags/:tag',function(req,res){
    var taglist = req.params.tag;
    taglist = taglist.split('&');
@@ -57,6 +61,7 @@ app.get('/api/v1/applytags/:tag',function(req,res){
      query.push(tmpquery);
    }
    console.log(query);
+   //TODO_REPLACE we aren't doing an explicit db lookup
    MongoClient.connect(config.dbUrl, function(err, db) {
      assert.equal(null, err);
      console.log("Apply!!");

@@ -40,6 +40,8 @@ fieldset {
 }
 dt{
 	width:100px;
+	font-weight:bold;
+	
 }
 dt:after {
     content: ":";

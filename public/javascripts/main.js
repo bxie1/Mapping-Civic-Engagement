@@ -24,21 +24,27 @@ function initialize() {
 
 function populateMarkers(apiLoc) {
     apiLoc = typeof apiLoc !== 'undefined' ? apiLoc : '/api/v1/';
+    
     $.getJSON(apiLoc, function(data) {
         // For each item in our JSON, add a new map marker
+        console.log("Got JSON");
         $.each(data, function(i, ob) {
           var marker = new google.maps.Marker({
                 map: map,
-                position: new google.maps.LatLng(this.faculty.location.latlng.coordinates[1],this.faculty.location.latlng.coordinates[0]),
-                id: this._id,
-                title: this.projectTitle,
-                faculty: this.faculty.firstname + ' ' + this.faculty.lastname,
-                email: this.faculty.email,
-                issueFilters: this.issueFilters,
-                researchProjects: this.research,
+                position: new google.maps.LatLng(parseFloat(this.acf.location.lat), parseFloat(this.acf.location.lng)),//parseFloat(this.acf.location.lat), parseFloat(this.acf.location.lng)
+                //position: new google.maps.LatLng(this.faculty.location.latlng.coordinates[1],this.faculty.location.latlng.coordinates[0]),
+                // id: this._id,
+                title: 'hello title',
+                // faculty: this.faculty.firstname + ' ' + this.faculty.lastname,
+                // email: this.faculty.email,
+                // issueFilters: this.issueFilters,
+                // researchProjects: this.research,
+                msgBody: this.content.rendered, //This should have the post content
                 icon: 'http://maps.google.com/mapfiles/ms/icons/red-dot.png'
           });
-
+         
+          console.log("POST CONTENT: " + marker.msgBody);
+/*
           //Get array of associated issues
           var tagList = [];
           $.each(marker.issueFilters, function(ind, obj) {
@@ -78,16 +84,9 @@ function populateMarkers(apiLoc) {
           }
 
           content += '<a href="/api/v1/'+ marker.id +'">More</a>';
-
-          // $.each(facList, function(inde, obje) {
-          //       content = content + '<div>Faculty: <a href="faculty/' + obje + '">' + obje + '</a></div>';
-          //       if (facList.indexOf(obje) < facList.length - 1) {
-          //           content = content + ',';
-          //       }
-          //   });
-
+*/
           marker.infowindow = new google.maps.InfoWindow({
-                content: content,
+                content: marker.msgBody,
                 maxWidth: 400
           });
 

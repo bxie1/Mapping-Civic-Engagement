@@ -4,6 +4,7 @@ var assert = require('assert');
 var express = require('express');
 var path = require('path');
 var config = require('./config');
+var http = require('http');
 var ObjectID = require('mongodb').ObjectID;
 
 //var dbUrl = 'mongodb://localhost:27017/sse';
@@ -19,16 +20,35 @@ app.get('/',function(req,res){
   res.render('index', { title: 'Returns all'});
 });
 
-//TODO_REPLACE
+
+var options = {
+  host: config.wpSite,
+  port: 80,
+  path: '/wp-json/wp/v2/posts/',
+  method: 'GET'
+};
+
 app.get('/api/v1/', function(req,res){
-  MongoClient.connect(config.dbUrl, function(err, db) {
-    assert.equal(null, err);
-    console.log("Connected correctly to server");
-    db.collection('locations').find({}).toArray(function(err, docs) {
-        res.json(docs);
-        db.close();
-    });
-  });
+
+//Retrieve all the posts from the WordPress site
+options.path = '/wp-json/wp/v2/posts/';
+
+  http.request(options, function(resp) {
+    var docs;
+    resp.setEncoding('utf8');
+      resp.on('data', function (chunk) {
+      if (docs === undefined){
+          docs = chunk;
+      } else{
+          docs +=chunk;
+      }
+      });
+      resp.on('end', function(){
+      var jdocs = JSON.parse(docs);
+      res.json(jdocs);
+      });
+  }).end();
+  console.log("HTTP request done.");
 });
 
 app.get('/api/v1/:id', function(req,res){
@@ -51,25 +71,26 @@ app.get('/api/v1/:id', function(req,res){
 //TODO_REPLACE. We're getting from wordpress now
 app.get('/api/v1/applytags/:tag',function(req,res){
    var taglist = req.params.tag;
-   taglist = taglist.split('&');
-   var query = [];
-   for (var i = 0; i < taglist.length; i++) {
-     var tmpquery = {};
-     var key = 'issueFilters.' + taglist[i];
-     var val = 1;
-     tmpquery[key] = val;
-     query.push(tmpquery);
-   }
-   console.log(query);
-   //TODO_REPLACE we aren't doing an explicit db lookup
-   MongoClient.connect(config.dbUrl, function(err, db) {
-     assert.equal(null, err);
-     console.log("Apply!!");
-     db.collection('locations').find({ $or: query}).toArray(function(e,docs){
-       res.json(docs);
-       db.close();
-     });
-   });
+   taglist = taglist.replace(/ /g,"%20");
+   
+   //Retrieve all the posts from the WordPress site
+  options.path = '/wp-json/wp/v2/posts?filter[category_name]='+taglist;
+  console.log("APPLY!! Path: " + options.path);
+  http.request(options, function(resp) {
+    var docs;
+    resp.setEncoding('utf8');
+      resp.on('data', function (chunk) {
+      if (docs === undefined){
+          docs = chunk;
+      } else{
+          docs +=chunk;
+      }
+      });
+      resp.on('end', function(){
+      var jdocs = JSON.parse(docs);
+      res.json(jdocs);
+      });
+  }).end();
 });
 
 app.listen(config.listen)

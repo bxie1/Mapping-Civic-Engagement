@@ -31,8 +31,8 @@ function populateMarkers(apiLoc) {
         $.each(data, function(i, ob) {
           var marker = new google.maps.Marker({
                 map: map,
-                position: new google.maps.LatLng(parseFloat(this.acf.location.lat), parseFloat(this.acf.location.lng)),//parseFloat(this.acf.location.lat), parseFloat(this.acf.location.lng)
-                //position: new google.maps.LatLng(this.faculty.location.latlng.coordinates[1],this.faculty.location.latlng.coordinates[0]),
+                position: new google.maps.LatLng(parseFloat(this.acf.location.lat), parseFloat(this.acf.location.lng)),
+                
                 // id: this._id,
                 title: 'hello title',
                 // faculty: this.faculty.firstname + ' ' + this.faculty.lastname,
@@ -102,11 +102,11 @@ function populateMarkers(apiLoc) {
     });
 };
 
-$("#courses_select").change(function(){
+// $("#courses_select").change(function(){
 
-    var x = $("#courses_select").val();
-    $("#course_list_div").html( "You selected: " + x);
-});
+//     var x = $("#courses_select").val();
+//     $("#course_list_div").html( "You selected: " + x);
+// });
 
 
 $("#apply").click(function() {
@@ -118,7 +118,7 @@ $("#apply").click(function() {
     }
     markers = [];
     $('#tags input:checked').each(function() {
-        applyPath = applyPath + $(this).prop('value') + '&';
+        applyPath = applyPath + $(this).prop('value') + ',';
     });
     console.log(applyPath);
     populateMarkers(applyPath);

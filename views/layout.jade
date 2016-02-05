@@ -10,7 +10,7 @@ html
             h1.center Civic Engagement Mapping
         div.container
             div.clearfix
-                #filters.col.col-3.p2
+                #filters.col.col-4
                     h2 Issue Areas
                     form#options-menu
                         fieldset#tags
@@ -46,7 +46,12 @@ html
                                             | Community-based Learning Course
                         div.py2
                             button#apply.m1.btn.btn-primary(type="button") Apply Settings
-                div.col.col-9
+                    #search-box.border
+                        form
+                            input(type="text" placeholder="Keyword Search")
+                            button.btn.btn-primary Go
+                        div HELLO BOX HELLO BOX HELLO BOX HELLO BOX HELLO BOX v v v HELLO BOXHELLO BOXHELLO BOXHELLO BOXHELLO BOXHELLO BOXHELLO BOXHELLO BOXHELLO BOXHELLO BOX
+                div.col.col-8.px1
                     #map_canvas
         block content
         script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js')

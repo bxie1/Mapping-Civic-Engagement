@@ -7,9 +7,15 @@ html,body,#map_canvas{
 #search-box{
 }
 
+#projects-list{
+	height: 200px;
+	overflow-y: scroll;
+}
+
 .container{
 	height: 80%;
 	max-width: 100%;
+	min-height: 650px;
 }
 .clearfix,.col{
 	height: 100%;

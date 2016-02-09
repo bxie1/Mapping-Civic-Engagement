@@ -68,12 +68,12 @@ app.get('/api/v1/:id', function(req,res){
   });
 });
 
-//TODO_REPLACE. We're getting from wordpress now
+
 app.get('/api/v1/applytags/:tag',function(req,res){
    var taglist = req.params.tag;
    taglist = taglist.replace(/ /g,"%20");
    
-   //Retrieve all the posts from the WordPress site
+   //Retrieve posts from the WordPress site
   options.path = '/wp-json/wp/v2/posts?filter[category_name]='+taglist;
   console.log("APPLY!! Path: " + options.path);
   http.request(options, function(resp) {

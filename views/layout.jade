@@ -10,7 +10,7 @@ html
             h1.center Civic Engagement Mapping
         div.container
             div.clearfix
-                #filters.col.col-4
+                #filters.col.col-3
                     h2 Issue Areas
                     form#options-menu
                         fieldset#tags
@@ -18,20 +18,20 @@ html
                                 div.p1.js-filter-tags
                                     div
                                         label.block
-                                            input(type="checkbox", name="Arts and Culture for Social Change" value="Arts and Culture for Social Change" checked="check")
-                                            | Arts and Culture for Social Change
+                                            input(type="checkbox", name="Arts, Culture, and Public Interest" value="Arts, Culture, and Public Interest" checked="check")
+                                            | Arts, Culture, & Public Interest
                                         label.block
                                             input(type="checkbox", name="Education" value="Education" checked="check")
                                             | Education
                                         label.block
-                                            input(type="checkbox", name="Environment Food and Sustainability" value="Environment Food and Sustainability" checked="check")
-                                            | Environment, Food and Sustainability
+                                            input(type="checkbox", name="Environment, Food, and Sustainability" value="Environment, Food, and Sustainability" checked="check")
+                                            | Environment, Food & Sustainability
                                         label.block
-                                            input(type="checkbox", name="Gender and Sexuality" value="Gender and Sexuality" checked="check")
-                                            | Gender and Sexuality
+                                            input(type="checkbox", name="Genders and Sexualities" value="Genders and Sexualities" checked="check")
+                                            | Genders & Sexualities
                                         label.block
                                             input(type="checkbox", name="Political Engagement and Public Policy" value="Political Engagement and Public Policy" checked="check")
-                                            | Political Engagement and Public Policy
+                                            | Political Engagement & Public Policy
                                         label.block
                                             input(type="checkbox", name="Race and Justice" value="Race and Justice" checked="check")
                                             | Race and Justice
@@ -40,10 +40,10 @@ html
                                             | Social Innovation
                                         label.block
                                             input(type="checkbox", name="Peace and Conflict Studies" value="Peace and Conflict Studies" checked="check")
-                                            | Peace and Conflict Studies
-                                        label.block
-                                            input(type="checkbox", name="Community-based Learning Course" value="Community-based Learning Course" checked="check")
-                                            | Community-based Learning Course
+                                            | Peace & Conflict Studies
+                                        // label.block
+                                        //     input(type="checkbox", name="Community-based Learning Course" value="Community-based Learning Course" checked="check")
+                                        //     | Community-based Learning Course
                         div.py2
                             button#apply.m1.btn.btn-primary(type="button") Apply Settings
                     #search-box.border
@@ -51,7 +51,7 @@ html
                             input(type="text" placeholder="Keyword Search")
                             button.btn.btn-primary Go
                         #projects-list.block Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mattis eget mauris semper aliquam. Morbi et sapien eget odio fermentum mollis sit amet tristique erat. Maecenas sollicitudin scelerisque erat vitae consectetur. Curabitur sagittis consectetur neque nec posuere. Aenean arcu eros, pulvinar a molestie in, sagittis mattis urna. Cras justo dui, volutpat at malesuada eget, sollicitudin non dolor. Mauris lobortis urna porttitor ipsum imperdiet, at elementum dolor accumsan. Donec augue nisi, hendrerit in semper ac, fermentum tempor odio. Integer vulputate est non tortor mollis consequat. Morbi pellentesque neque scelerisque lorem vehicula fermentum. Suspendisse pharetra risus eget nibh convallis, vitae cursus risus facilisis. 
-                div.col.col-8.px1
+                div.col.col-9.px1
                     #map_canvas
         block content
         script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js')

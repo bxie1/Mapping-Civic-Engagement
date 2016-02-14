@@ -36,12 +36,7 @@ function populateMarkers(apiLoc) {
                 map: map,
                 position: new google.maps.LatLng(parseFloat(this.acf.location.lat), parseFloat(this.acf.location.lng)),
                 
-                // id: this._id,
                 title: this.title.rendered,
-                // faculty: this.faculty.firstname + ' ' + this.faculty.lastname,
-                // email: this.faculty.email,
-                // issueFilters: this.issueFilters,
-                // researchProjects: this.research,
                 email: this.acf.email,
                 msgBody: this.content.rendered, //This should have the post content
                 icon: 'http://maps.google.com/mapfiles/ms/icons/red-dot.png'
@@ -52,8 +47,6 @@ function populateMarkers(apiLoc) {
           var content = '<h3 class="mt0">' + marker.title + '</h3>' +
           '<div>Description: ' + marker.msgBody +"</div>" +  
           '<div>Contact Email: <a href="mailto:' + marker.email + '">' + marker.email + '</a></div>';
-
-          
 
         //   $.each(tagList, function(inde, obje) {
         //         content = content + ' <a href="issue/' + obje + '">' + obje + '</a>';
@@ -79,8 +72,6 @@ function populateMarkers(apiLoc) {
                 maxWidth: 400
           });
           
-          
-          $("#projects-list").append("<p>" +marker.title + "</p>");
 
           google.maps.event.addListener(marker, 'click', function() {
                 if (currentInfoWindow) currentInfoWindow.close();

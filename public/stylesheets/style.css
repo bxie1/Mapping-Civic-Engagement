@@ -2,9 +2,12 @@ html,body,#map_canvas{
 	height: 100%;
 	margin:0;
 	padding:0;
+	
 }
-
-#search-box{
+.banner-img{
+	height:6rem;
+	overflow-y:hidden;
+	
 }
 
 #projects-list{
@@ -28,6 +31,10 @@ html,body,#map_canvas{
 }
 #filters{
 	background-color: #efefef;
+}
+
+#tags{
+	font-size:1.5rem;
 }
 
 .thumb{

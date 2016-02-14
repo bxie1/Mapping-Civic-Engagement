@@ -6,8 +6,10 @@ html
         link(rel='stylesheet', href='/stylesheets/style.css')
 
     body
-        header(role='banner')
-            h1.center Civic Engagement Mapping
+        header.center(role='banner')
+            img.inline-block.banner-img(src='/images/CollegeLogoGarnet.svg')
+            h1.align-top.inline-block Civic Engagement Mapping
+            img.inline-block.banner-img(src='/images/CollegeLogoGarnet.svg')
         div.container
             div.clearfix
                 #filters.col.col-3
@@ -34,23 +36,16 @@ html
                                             | Political Engagement & Public Policy
                                         label.block
                                             input(type="checkbox", name="Race and Justice" value="Race and Justice" checked="check")
-                                            | Race and Justice
+                                            | Race & Justice
                                         label.block
                                             input(type="checkbox", name="Social Innovation" value="Social Innovation" checked="check")
                                             | Social Innovation
                                         label.block
                                             input(type="checkbox", name="Peace and Conflict Studies" value="Peace and Conflict Studies" checked="check")
                                             | Peace & Conflict Studies
-                                        // label.block
-                                        //     input(type="checkbox", name="Community-based Learning Course" value="Community-based Learning Course" checked="check")
-                                        //     | Community-based Learning Course
+
                         div.py2
                             button#apply.m1.btn.btn-primary(type="button") Apply Settings
-                    #search-box.border
-                        form
-                            input(type="text" placeholder="Keyword Search")
-                            button.btn.btn-primary Go
-                        #projects-list.block Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mattis eget mauris semper aliquam. Morbi et sapien eget odio fermentum mollis sit amet tristique erat. Maecenas sollicitudin scelerisque erat vitae consectetur. Curabitur sagittis consectetur neque nec posuere. Aenean arcu eros, pulvinar a molestie in, sagittis mattis urna. Cras justo dui, volutpat at malesuada eget, sollicitudin non dolor. Mauris lobortis urna porttitor ipsum imperdiet, at elementum dolor accumsan. Donec augue nisi, hendrerit in semper ac, fermentum tempor odio. Integer vulputate est non tortor mollis consequat. Morbi pellentesque neque scelerisque lorem vehicula fermentum. Suspendisse pharetra risus eget nibh convallis, vitae cursus risus facilisis. 
                 div.col.col-9.px1
                     #map_canvas
         block content

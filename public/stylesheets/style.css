@@ -34,7 +34,7 @@ html,body,#map_canvas{
 }
 
 #tags{
-	font-size:1.5rem;
+	font-size:1.3rem;
 }
 
 .thumb{
@@ -57,3 +57,13 @@ dt{
 dt:after {
     content: ":";
  }
+ 
+label { 
+	 
+	color:rgb(51, 51, 255);
+}
+
+input[type="checkbox"]:checked + label {
+    color: rgb(0, 204, 0);
+}
+ 

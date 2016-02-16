@@ -18,31 +18,37 @@ html
                         fieldset#tags
                             section
                                 div.p1.js-filter-tags
-                                    div
-                                        label.block
-                                            input(type="checkbox", name="Arts, Culture, and Public Interest" value="Arts, Culture, and Public Interest" checked="check")
-                                            | Arts, Culture, & Public Interest
-                                        label.block
-                                            input(type="checkbox", name="Education" value="Education" checked="check")
-                                            | Education
-                                        label.block
-                                            input(type="checkbox", name="Environment, Food, and Sustainability" value="Environment, Food, and Sustainability" checked="check")
-                                            | Environment, Food & Sustainability
-                                        label.block
-                                            input(type="checkbox", name="Genders and Sexualities" value="Genders and Sexualities" checked="check")
-                                            | Genders & Sexualities
-                                        label.block
-                                            input(type="checkbox", name="Political Engagement and Public Policy" value="Political Engagement and Public Policy" checked="check")
-                                            | Political Engagement & Public Policy
-                                        label.block
-                                            input(type="checkbox", name="Race and Justice" value="Race and Justice" checked="check")
-                                            | Race & Justice
-                                        label.block
-                                            input(type="checkbox", name="Social Innovation" value="Social Innovation" checked="check")
-                                            | Social Innovation
-                                        label.block
-                                            input(type="checkbox", name="Peace and Conflict Studies" value="Peace and Conflict Studies" checked="check")
-                                            | Peace & Conflict Studies
+                                    div.block
+                                        input(type="checkbox", id="in_arts" name="Arts, Culture, and Public Interest" value="Arts, Culture, and Public Interest" checked="check") 
+                                        label(for="in_arts") Arts, Culture, & Public Interest
+
+                                    div.block
+                                        input(type="checkbox", id="in_edu" name="Education" value="Education" checked="check")
+                                        label(for="in_edu") Education
+                                    
+                                    div.block
+                                        input(type="checkbox", id="in_env" name="Environment, Food, and Sustainability" value="Environment, Food, and Sustainability" checked="check")
+                                        label(for="in_env") Environment, Food & Sustainability
+                                    
+                                    div.block
+                                        input(type="checkbox", id="in_gend" name="Genders and Sexualities" value="Genders and Sexualities" checked="check")
+                                        label(for="in_gend") Genders & Sexualities
+                                        
+                                    div.block
+                                        input(type="checkbox", id="in_poli" name="Political Engagement and Public Policy" value="Political Engagement and Public Policy" checked="check")
+                                        label(for="in_poli") Political Engagement & Public Policy
+                                        
+                                    div.block
+                                        input(type="checkbox", id="in_race" name="Race and Justice" value="Race and Justice" checked="check")
+                                        label(for="in_race") Race & Justice
+                                    
+                                    div.block
+                                        input(type="checkbox", id="in_soc" name="Social Innovation" value="Social Innovation" checked="check")
+                                        label(for="in_soc") Social Innovation
+                                    
+                                    div.block
+                                        input(type="checkbox", id="in_peac" name="Peace and Conflict Studies" value="Peace and Conflict Studies" checked="check")
+                                        label(for="in_peac") Peace & Conflict Studies
 
                         div.py2
                             button#apply.m1.btn.btn-primary(type="button") Apply Settings

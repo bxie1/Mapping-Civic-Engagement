@@ -7,9 +7,9 @@ html
 
     body
         header.center(role='banner')
-            img.inline-block.banner-img(src='/images/CollegeLogoGarnet.svg')
+            img.inline-block.banner-img.right(src='/images/CollegeLogoGarnet.svg')
             h1.align-top.inline-block Civic Engagement Mapping
-            img.inline-block.banner-img(src='/images/CollegeLogoGarnet.svg')
+            img.inline-block.banner-img.left(src='/images/lang-center-logo.png')
         div.container
             div.clearfix
                 #filters.col.col-3
@@ -52,6 +52,9 @@ html
 
                         div.py2
                             button#apply.m1.btn.btn-primary(type="button") Apply Settings
+                        div.py3
+                            input(type="text" placeholder="Keyword Search")
+                            button.btn.btn-primary Go
                 div.col.col-9.px1
                     #map_canvas
         block content

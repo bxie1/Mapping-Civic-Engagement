@@ -2,10 +2,11 @@ html,body,#map_canvas{
 	height: 100%;
 	margin:0;
 	padding:0;
+	font-family: sans-serif;
 	
 }
 .banner-img{
-	height:6rem;
+	height:5rem;
 	overflow-y:hidden;
 	
 }
@@ -36,7 +37,9 @@ html,body,#map_canvas{
 #tags{
 	font-size:1.3rem;
 	box-shadow: 3px 3px 8px #888888;
-	width:98%;
+	width:97%;
+	background-color:#0074d9;
+	margin:1%;
 	/*border: dotted black 1px;*/
 }
 
@@ -63,11 +66,11 @@ dt:after {
  
 label { 
 	 
-	color:rgb(152,152,152);
+	color:rgb(200,200,200);
 }
 
 input[type="checkbox"]:checked + label {
-    color: rgb(0, 204, 0);
+    color: white;
 }
  
 .noselect {

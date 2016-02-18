@@ -53,9 +53,9 @@ html
                         div.py2
                             button#apply.m1.btn.btn-primary(type="button") Apply Settings
                         div.py3
-                            input(type="text" placeholder="Keyword Search")
-                            button.btn.btn-primary Go
-                div.col.col-9.px1
+                            input(type="search" placeholder="Keyword Search" name="keyword_inputs")
+                            button#search_btn.btn.btn-primary(type="button") Go
+                div.col.col-9
                     #map_canvas
         block content
         script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js')

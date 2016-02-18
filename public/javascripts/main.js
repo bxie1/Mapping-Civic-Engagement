@@ -27,7 +27,7 @@ function initialize() {
 
 function populateMarkers(apiLoc) {
     apiLoc = typeof apiLoc !== 'undefined' ? apiLoc : '/api/v1/';
-    $("#projects-list").empty();
+    
     $.getJSON(apiLoc, function(data) {
         // For each item in our JSON, add a new map marker
         console.log("Got JSON");
@@ -83,6 +83,13 @@ function populateMarkers(apiLoc) {
         });
     });
 };
+
+$("#search_btn").click(function() {
+    //Closes any open infowindows
+    if (currentInfoWindow) currentInfoWindow.close();
+    var applyPath = '/api/v1/applytags/';
+    populateMarkers();
+});
 
 $("#apply").click(function() {
     //Closes any open infowindows

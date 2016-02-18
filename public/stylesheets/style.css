@@ -2,16 +2,23 @@ html,body,#map_canvas{
 	height: 100%;
 	margin:0;
 	padding:0;
+	font-family: sans-serif;
 }
-.botmodule{
-	min-height: 300px;
-	padding:10px;
+.banner-img{
+	height:5rem;
+	overflow-y:hidden;
 	
+}
+
+#projects-list{
+	height: 200px;
+	overflow-y: scroll;
 }
 
 .container{
 	height: 80%;
 	max-width: 100%;
+	min-height: 650px;
 }
 .clearfix,.col{
 	height: 100%;
@@ -24,6 +31,15 @@ html,body,#map_canvas{
 }
 #filters{
 	background-color: #efefef;
+}
+
+#tags{
+	font-size:1.3rem;
+	box-shadow: 3px 3px 8px #888888;
+	width:97%;
+	background-color:#0074d9;
+	margin:1%;
+	/*border: dotted black 1px;*/
 }
 
 .thumb{
@@ -40,7 +56,27 @@ fieldset {
 }
 dt{
 	width:100px;
+	font-weight:bold;
+	
 }
 dt:after {
     content: ":";
  }
+ 
+label {
+	color:rgb(200,200,200);
+}
+
+input[type="checkbox"]:checked + label {
+    color: white;
+}
+ 
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* IE/Edge */
+  user-select: none;           /* non-prefixed version, currently
+                                  not supported by any browser */
+}

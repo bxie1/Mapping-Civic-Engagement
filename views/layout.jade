@@ -6,71 +6,57 @@ html
         link(rel='stylesheet', href='/stylesheets/style.css')
 
     body
-        header(role='banner')
-            h1.center Civic Engagement Mapping
+        header.center(role='banner')
+            img.inline-block.banner-img.right(src='/images/CollegeLogoGarnet.svg')
+            h1.align-top.inline-block Civic Engagement Mapping
+            img.inline-block.banner-img.left(src='/images/lang-center-logo.png')
         div.container
             div.clearfix
-                #filters.col.col-3.p2
+                #filters.col.col-3
                     h2 Issue Areas
                     form#options-menu
                         fieldset#tags
                             section
-                                div.p1.js-filter-tags
-                                    div
-                                        label.block
-                                            input(type="checkbox", name="Arts and Culture for Social Change" value="Arts and Culture for Social Change" checked="check")
-                                            | Arts and Culture for Social Change
-                                        label.block
-                                            input(type="checkbox", name="Education" value="Education" checked="check")
-                                            | Education
-                                        label.block
-                                            input(type="checkbox", name="Environment Food and Sustainability" value="Environment Food and Sustainability" checked="check")
-                                            | Environment, Food and Sustainability
-                                        label.block
-                                            input(type="checkbox", name="Gender and Sexuality" value="Gender and Sexuality" checked="check")
-                                            | Gender and Sexuality
-                                        label.block
-                                            input(type="checkbox", name="Political Engagement and Public Policy" value="Political Engagement and Public Policy" checked="check")
-                                            | Political Engagement and Public Policy
-                                        label.block
-                                            input(type="checkbox", name="Race Class and Inequality" value="Race Class and Inequality" checked="check")
-                                            | Race, Class and Inequality
-                                        label.block
-                                            input(type="checkbox", name="Social Innovation" value="Social Innovation" checked="check")
-                                            | Social Innovation
-                                        label.block
-                                            input(type="checkbox", name="Peace and Conflict Studies" value="Peace and Conflict Studies" checked="check")
-                                            | Peace and Conflict Studies
-                                        label.block
-                                            input(type="checkbox", name="Health and Societies" value="Health and Societies" checked="check")
-                                            | Health and Societies
+                                div.p1.js-filter-tags.noselect
+                                    div.block
+                                        input(type="checkbox", id="in_arts" name="Arts, Culture, and Public Interest" value="Arts, Culture, and Public Interest" checked="check") 
+                                        label(for="in_arts") Arts, Culture, & Public Interest
+
+                                    div.block
+                                        input(type="checkbox", id="in_edu" name="Education" value="Education" checked="check")
+                                        label(for="in_edu") Education
+                                    
+                                    div.block
+                                        input(type="checkbox", id="in_env" name="Environment, Food, and Sustainability" value="Environment, Food, and Sustainability" checked="check")
+                                        label(for="in_env") Environment, Food & Sustainability
+                                    
+                                    div.block
+                                        input(type="checkbox", id="in_gend" name="Genders and Sexualities" value="Genders and Sexualities" checked="check")
+                                        label(for="in_gend") Genders & Sexualities
+                                        
+                                    div.block
+                                        input(type="checkbox", id="in_poli" name="Political Engagement and Public Policy" value="Political Engagement and Public Policy" checked="check")
+                                        label(for="in_poli") Political Engagement & Public Policy
+                                        
+                                    div.block
+                                        input(type="checkbox", id="in_race" name="Race and Justice" value="Race and Justice" checked="check")
+                                        label(for="in_race") Race & Justice
+                                    
+                                    div.block
+                                        input(type="checkbox", id="in_soc" name="Social Innovation" value="Social Innovation" checked="check")
+                                        label(for="in_soc") Social Innovation
+                                    
+                                    div.block
+                                        input(type="checkbox", id="in_peac" name="Peace and Conflict Studies" value="Peace and Conflict Studies" checked="check")
+                                        label(for="in_peac") Peace & Conflict Studies
+
                         div.py2
                             button#apply.m1.btn.btn-primary(type="button") Apply Settings
+                        div.py3
+                            input(type="search" placeholder="Keyword Search" name="keyword_inputs")
+                            button#search_btn.btn.btn-primary(type="button") Go
                 div.col.col-9
                     #map_canvas
-            #option_modules_container.container.mt2
-                div.clearfix
-                    #eng_by_location.botmodule.col.col-4
-                        input(type="text" placeholder="Enter Location")
-                        p Engagement by Location
-                    #course_by_issues.botmodule.col.col-4
-                        select#courses_select
-                            option(value="Environmental Protection") Environmental Protection
-                            option(value="Education") Education
-                            option(value="Social Innovation") Social Innovation
-                            option(value="Arts and Social Change") Arts and Social Change
-                            option(value="Race and Justice") Race and Justice
-                            option(value="Political Participation") Political Participation
-                        #course_list_div CBL Courses by Issues
-                    #eng_opportunities.botmodule.col.col-4
-                        select
-                            option Environmental Protection
-                            option Education
-                            option Social Innovation
-                            option Arts and Social Change
-                            option Race and Justice
-                            option Political Participation
-                        P Engagement Opportunities
         block content
         script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js')
         script(src='/javascripts/main.js')

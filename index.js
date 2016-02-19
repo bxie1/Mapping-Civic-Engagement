@@ -51,21 +51,32 @@ options.path = '/wp-json/wp/v2/posts/';
   console.log("HTTP request done.");
 });
 
-app.get('/api/v1/:id', function(req,res){
-  var docID = ObjectID(req.params.id);
-  var query = {};
-  var key = '_id';
-  var val = docID;
-  query[key] = val;
-  //TODO_REPLACE
-  MongoClient.connect(config.dbUrl, function(err, db) {
-    assert.equal(null, err);
-    console.log(query);
-    db.collection('locations').find(query).toArray(function(err, docs) {
-        res.json(docs);
-        db.close();
-    });
-  });
+app.get('/api/v1/search/:keywords',function(req,res){
+  var keywords = req.params.keywords;
+  keywords = keywords.replace(/ /g,"%20");
+  //Retrieve posts from the WordPress site
+  keywords = "search=" + keywords
+  //TODO Create query with &search=keyword
+  options.path = '/wp-json/wp/v2/posts?'+keywords;
+  
+  
+  console.log("Search! Path: " + options.path);
+  
+  http.request(options, function(resp) {
+    var docs;
+    resp.setEncoding('utf8');
+      resp.on('data', function (chunk) {
+      if (docs === undefined){
+          docs = chunk;
+      } else{
+          docs +=chunk;
+      }
+      });
+      resp.on('end', function(){
+      var jdocs = JSON.parse(docs);
+      res.json(jdocs);
+      });
+  }).end();
 });
 
 

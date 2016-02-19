@@ -13,10 +13,10 @@ body{
 	overflow-y:hidden;
 }
 
-#projects-list{
-	height: 200px;
-	overflow-y: scroll;
-}
+/*#projects-list{*/
+/*	height: 200px;*/
+/*	overflow-y: scroll;*/
+/*}*/
 
 .container{
 	height: 80%;
@@ -38,11 +38,16 @@ body{
 
 #tags{
 	font-size:1.3rem;
-	box-shadow: 3px 3px 8px #888888;
+	/*box-shadow: 3px 3px 8px #888888;*/
 	width:97%;
-	background-color:#0074d9;
+	/*background-color:#0074d9;*/
+	background-color:gray;
 	margin:1%;
 	/*border: dotted black 1px;*/
+}
+
+.check_block:hover label{
+	color:white;
 }
 
 .thumb{
@@ -69,6 +74,7 @@ dt:after {
 label {
 	color:rgb(200,200,200);
 }
+
 
 input[type="checkbox"]:checked + label {
     color: white;

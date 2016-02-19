@@ -82,14 +82,21 @@ function populateMarkers(apiLoc) {
           markers.push(marker);
         });
     });
-};
+}
 
-$("#search_btn").click(function() {
+$("#search_form").submit(function(event){
     //Closes any open infowindows
     if (currentInfoWindow) currentInfoWindow.close();
-    var applyPath = '/api/v1/applytags/';
-    populateMarkers();
+    var applyPath = '/api/v1/search/';
+    
+    applyPath += $('#search_box').val();
+    alert(applyPath);
+    //Tokenize Keywords / Sanitize Input
+    
+    populateMarkers(applyPath);
+    return false;
 });
+
 
 $("#apply").click(function() {
     //Closes any open infowindows

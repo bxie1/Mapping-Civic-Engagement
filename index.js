@@ -77,6 +77,7 @@ app.get('/api/v1/search/:keywords',function(req,res){
       res.json(jdocs);
       });
   }).end();
+  console.log("HTTP request done for search.");
 });
 
 
@@ -102,6 +103,7 @@ app.get('/api/v1/applytags/:tag',function(req,res){
       res.json(jdocs);
       });
   }).end();
+  console.log("HTTP request done for apply tags.");
 });
 
 app.listen(config.listen)

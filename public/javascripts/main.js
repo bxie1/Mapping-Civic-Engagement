@@ -88,10 +88,14 @@ $("#search_form").submit(function(event){
     //Closes any open infowindows
     if (currentInfoWindow) currentInfoWindow.close();
     var applyPath = '/api/v1/search/';
+    for (var i = 0; i < markers.length; i++) {
+        markers[i].setVisible(false);
+    }
+    markers = [];
     
     applyPath += $('#search_box').val();
     alert(applyPath);
-    //Tokenize Keywords / Sanitize Input
+    //TODO Tokenize Keywords / Sanitize Input
     
     populateMarkers(applyPath);
     return false;

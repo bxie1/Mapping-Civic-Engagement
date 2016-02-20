@@ -82,8 +82,8 @@ app.get('/api/v1/search/:keywords',function(req,res){
 
 
 app.get('/api/v1/applytags/:tag',function(req,res){
-   var taglist = req.params.tag;
-   taglist = taglist.replace(/ /g,"%20");
+  var taglist = req.params.tag;
+  taglist = taglist.replace(/ /g,"%20");
    
    //Retrieve posts from the WordPress site
   options.path = '/wp-json/wp/v2/posts?filter[category_name]='+taglist;

@@ -6,9 +6,10 @@ html
         link(rel='stylesheet', href='/stylesheets/style.css')
 
     body
-        header.center(role='banner')
-            img.inline-block.banner-img.left(src='/images/CollegeLogoGarnet.svg')
-            h1.align-top.inline-block Civic Engagement Mapping
+        div.header-div(role='banner')
+            img.banner-img.left(src='/images/CollegeLogoGarnet.svg')
+            h1.main-title.center Civic Engagement Mapping
+            h3.center Sponsored by the Lang Center for Civic and Social Responsibility
             //img.inline-block.banner-img.left(src='/images/lang-center-logo.png')
         div.container
             div.clearfix
@@ -50,7 +51,7 @@ html
                                         input(type="checkbox", id="in_peac" name="Peace and Conflict Studies" value="Peace and Conflict Studies" checked="check")
                                         label(for="in_peac") Peace & Conflict Studies
 
-                        div.py2
+                        div
                             button#apply.m1.btn.btn-primary(type="button") Apply Settings
                     div.py3
                         form#search_form

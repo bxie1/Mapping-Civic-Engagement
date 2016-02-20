@@ -8,15 +8,15 @@ html,body,#map_canvas{
 body{
 	min-height:750px;
 }
-.banner-img{
-	height:5rem;
-	overflow-y:hidden;
+.header-div{
+	overflow:auto;
 }
-
-/*#projects-list{*/
-/*	height: 200px;*/
-/*	overflow-y: scroll;*/
-/*}*/
+.banner-img{
+	height:10rem;
+	float:left;
+	/*clear:right;*/
+	overflow:auto;
+}
 
 .container{
 	height: 80%;

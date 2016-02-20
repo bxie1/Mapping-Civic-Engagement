@@ -48,25 +48,6 @@ function populateMarkers(apiLoc) {
           '<div>Description: ' + marker.msgBody +"</div>" +  
           '<div>Contact Email: <a href="mailto:' + marker.email + '">' + marker.email + '</a></div>';
 
-        //   $.each(tagList, function(inde, obje) {
-        //         content = content + ' <a href="issue/' + obje + '">' + obje + '</a>';
-        //         if (tagList.indexOf(obje) < tagList.length - 1) {
-        //             content = content + ',';
-        //         } else{
-        //           content += '<div>';
-        //         }
-        //     });
-
-        //   if(projList.length>0){
-        //     content = content + '<div> Research Projects <ul>';
-        //     $.each(projList, function(inde, obje){
-        //         content = content + '<li>'+ obje.projectTitle +'</li>';
-        //     });
-        //     content = content + '</ul></div>'
-        //   }
-
-        //   content += '<a href="/api/v1/'+ marker.id +'">More</a>';
-
           marker.infowindow = new google.maps.InfoWindow({
                 content: content,
                 maxWidth: 400

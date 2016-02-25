@@ -31,11 +31,16 @@ function populateMarkers(apiLoc) {
     $.getJSON(apiLoc, function(data) {
         // For each item in our JSON, add a new map marker
         console.log("Got JSON");
+        
+        if(data.length == 0){
+            alert("No projects found.");
+        }
+        
         $.each(data, function(i, ob) {
           var marker = new google.maps.Marker({
                 map: map,
                 position: new google.maps.LatLng(parseFloat(this.acf.location.lat), parseFloat(this.acf.location.lng)),
-                
+                name: this.acf.contact_name,
                 title: this.title.rendered,
                 email: this.acf.email,
                 msgBody: this.content.rendered, //This should have the post content
@@ -46,6 +51,7 @@ function populateMarkers(apiLoc) {
           //Add information to display as content
           var content = '<h3 class="mt0">' + marker.title + '</h3>' +
           '<div>Description: ' + marker.msgBody +"</div>" +  
+          "<div>Contact: " + marker.name + "</div>" +
           '<div>Contact Email: <a href="mailto:' + marker.email + '">' + marker.email + '</a></div>';
 
           marker.infowindow = new google.maps.InfoWindow({
@@ -75,7 +81,7 @@ $("#search_form").submit(function(event){
     markers = [];
     
     applyPath += $('#search_box').val();
-    alert(applyPath);
+    //alert(applyPath);
     //TODO Tokenize Keywords / Sanitize Input
     
     populateMarkers(applyPath);

@@ -1,24 +1,46 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Lora);
+
 html,body,#map_canvas{
 	height: 100%;
 	margin:0;
 	padding:0;
-	font-family: sans-serif;
+	min-width:925px;
 }
-.banner-img{
-	height:5rem;
-	overflow-y:hidden;
+body{
+	min-height:750px;
+	background-color:#631919;
+}
+.header-div{
+	overflow:auto;
 	
 }
+h1, h3{
+	font-family: 'Lora', serif;
+	color:white;
+	/*font-family: 'Lato';*/
+}
 
-#projects-list{
-	height: 200px;
-	overflow-y: scroll;
+.btn-primary{
+	background-color:#832121;
+}
+
+h2{
+	color:black;
+	font-family: 'Lora', serif;
+}
+.banner-img{
+	height:10rem;
+	float:left;
+	/*clear:right;*/
+	overflow:auto;
 }
 
 .container{
 	height: 80%;
 	max-width: 100%;
 	min-height: 650px;
+	font-family: 'Lato';
 }
 .clearfix,.col{
 	height: 100%;
@@ -30,16 +52,19 @@ html,body,#map_canvas{
 	height: auto;
 }
 #filters{
-	background-color: #efefef;
+	background: url(http://www.swarthmore.edu/sites/all/themes/swarthmore_bootstrap/css/images/bg_content.jpg) repeat scroll 0% 0% transparent;
 }
 
 #tags{
 	font-size:1.3rem;
-	box-shadow: 3px 3px 8px #888888;
+	/*box-shadow: 3px 3px 8px #888888;*/
 	width:97%;
-	background-color:#0074d9;
 	margin:1%;
+	padding-left:5px;
+	padding-bottom:5px;
+	padding-top:5px;
 	/*border: dotted black 1px;*/
+	/*border-radius:2%;*/
 }
 
 .thumb{
@@ -54,6 +79,7 @@ fieldset {
 .btn-small {
   padding: .125rem .5rem;
 }
+
 dt{
 	width:100px;
 	font-weight:bold;
@@ -67,8 +93,16 @@ label {
 	color:rgb(200,200,200);
 }
 
+
+.check_block:hover label{
+	color:black;
+}
+
 input[type="checkbox"]:checked + label {
-    color: white;
+    color: black;
+}
+input[type="checkbox"]:checked:hover + label {
+    color:rgb(200,200,200);
 }
  
 .noselect {

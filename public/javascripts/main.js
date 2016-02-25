@@ -31,11 +31,16 @@ function populateMarkers(apiLoc) {
     $.getJSON(apiLoc, function(data) {
         // For each item in our JSON, add a new map marker
         console.log("Got JSON");
+        
+        if(data.length == 0){
+            alert("No projects found.");
+        }
+        
         $.each(data, function(i, ob) {
           var marker = new google.maps.Marker({
                 map: map,
                 position: new google.maps.LatLng(parseFloat(this.acf.location.lat), parseFloat(this.acf.location.lng)),
-                
+                name: this.acf.contact_name,
                 title: this.title.rendered,
                 email: this.acf.email,
                 msgBody: this.content.rendered, //This should have the post content
@@ -46,26 +51,8 @@ function populateMarkers(apiLoc) {
           //Add information to display as content
           var content = '<h3 class="mt0">' + marker.title + '</h3>' +
           '<div>Description: ' + marker.msgBody +"</div>" +  
+          "<div>Contact: " + marker.name + "</div>" +
           '<div>Contact Email: <a href="mailto:' + marker.email + '">' + marker.email + '</a></div>';
-
-        //   $.each(tagList, function(inde, obje) {
-        //         content = content + ' <a href="issue/' + obje + '">' + obje + '</a>';
-        //         if (tagList.indexOf(obje) < tagList.length - 1) {
-        //             content = content + ',';
-        //         } else{
-        //           content += '<div>';
-        //         }
-        //     });
-
-        //   if(projList.length>0){
-        //     content = content + '<div> Research Projects <ul>';
-        //     $.each(projList, function(inde, obje){
-        //         content = content + '<li>'+ obje.projectTitle +'</li>';
-        //     });
-        //     content = content + '</ul></div>'
-        //   }
-
-        //   content += '<a href="/api/v1/'+ marker.id +'">More</a>';
 
           marker.infowindow = new google.maps.InfoWindow({
                 content: content,
@@ -82,14 +69,25 @@ function populateMarkers(apiLoc) {
           markers.push(marker);
         });
     });
-};
+}
 
-$("#search_btn").click(function() {
+$("#search_form").submit(function(event){
     //Closes any open infowindows
     if (currentInfoWindow) currentInfoWindow.close();
-    var applyPath = '/api/v1/applytags/';
-    populateMarkers();
+    var applyPath = '/api/v1/search/';
+    for (var i = 0; i < markers.length; i++) {
+        markers[i].setVisible(false);
+    }
+    markers = [];
+    
+    applyPath += $('#search_box').val();
+    //alert(applyPath);
+    //TODO Tokenize Keywords / Sanitize Input
+    
+    populateMarkers(applyPath);
+    return false;
 });
+
 
 $("#apply").click(function() {
     //Closes any open infowindows

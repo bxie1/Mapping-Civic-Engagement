@@ -49,7 +49,7 @@ function populateMarkers(apiLoc) {
          
 
           //Add information to display as content
-          var content = '<h3 class="mt0">' + marker.title + '</h3>' +
+          var content = '<h2 class="mt0">' + marker.title + '</h2>' +
           '<div>Description: ' + marker.msgBody +"</div>" +  
           "<div>Contact: " + marker.name + "</div>" +
           '<div>Contact Email: <a href="mailto:' + marker.email + '">' + marker.email + '</a></div>';

@@ -57,7 +57,7 @@ h2{
 }
 
 #tags{
-	font-size:1.3rem;
+	font-size:1.4rem;
 	/*box-shadow: 3px 3px 8px #888888;*/
 	width:97%;
 	margin:1%;
@@ -72,7 +72,7 @@ h2{
 	width:350px;
 }
 
-#search_box{
+#search_div{
 	position: absolute;
     bottom: 5px;
 }
@@ -91,6 +91,13 @@ dt{
 	font-weight:bold;
 	
 }
+input[type=checkbox] {
+    transform: scale(1.7);
+    -ms-transform: scale(1.7);
+    -webkit-transform: scale(1.7);
+    padding: 5px;
+}
+
 dt:after {
     content: ":";
  }
@@ -99,7 +106,9 @@ label {
 	color:rgb(200,200,200);
 }
 
-
+.check_block{
+	padding:3px;
+}
 .check_block:hover label{
 	color:black;
 }

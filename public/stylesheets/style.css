@@ -77,6 +77,10 @@ h2{
     bottom: 5px;
 }
 
+#search_box{
+	padding:0;
+}
+
 fieldset {
 	border:0;
 	padding:0;
@@ -92,9 +96,9 @@ dt{
 	
 }
 input[type=checkbox] {
-    transform: scale(1.7);
-    -ms-transform: scale(1.7);
-    -webkit-transform: scale(1.7);
+    transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
     padding: 5px;
 }
 

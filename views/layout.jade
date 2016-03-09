@@ -2,8 +2,11 @@ doctype html
 html
     head
         title Civic Engagement Landscape
+        link(rel='stylesheet', href='/stylesheets/modal-min-bootstrap.css')
         link(rel='stylesheet', href='//d2v52k3cl9vedd.cloudfront.net/basscss/7.0.0/basscss.min.css')
         link(rel='stylesheet', href='/stylesheets/style.css')
+        
+        //link(rel='stylesheet', href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous")
 
     body
         div.header-div(role='banner')
@@ -52,6 +55,16 @@ html
 
                         div
                             button#apply.m1.btn.btn-primary(type="button") Apply Settings
+                    #search_modal.modal.fade(role='dialog')
+                        .modal-dialog
+                            .modal-content
+                                .modal-header
+                                    button.close(type='button', data-dismiss='modal') &times;
+                                    h4.modal-title Modal Header
+                                .modal-body
+                                    p Some text in the modal.
+                                .modal-footer
+                                    button.btn.btn-default(type='button', data-dismiss='modal') Close
                     div.py2#search_div
                         form#search_form
                             input#search_box(type="search" placeholder="Keyword Search" name="keyword_inputs")
@@ -60,5 +73,6 @@ html
                     #map_canvas
         block content
         script(src='//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js')
+        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous")
         script(src='/javascripts/main.js')
         script(src='https://maps.googleapis.com/maps/api/js?&sensor=false')

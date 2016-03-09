@@ -69,6 +69,7 @@ function populateMarkers(apiLoc) {
           markers.push(marker);
         });
     });
+    
 }
 
 $("#search_form").submit(function(event){
@@ -85,6 +86,7 @@ $("#search_form").submit(function(event){
     //TODO Tokenize Keywords / Sanitize Input
     
     populateMarkers(applyPath);
+    $('#search_modal').modal('toggle');
     return false;
 });
 

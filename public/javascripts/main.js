@@ -27,14 +27,12 @@ function initialize() {
 
 function populateMarkers(apiLoc) {
     apiLoc = typeof apiLoc !== 'undefined' ? apiLoc : '/api/v1/';
-    
+    $(".modal-body").empty();
     $.getJSON(apiLoc, function(data) {
         // For each item in our JSON, add a new map marker
         console.log("Got JSON");
+        $(".modal-header h4").html("<h4>" + data.length + " Result(s) Found</h4>" );
         
-        if(data.length == 0){
-            alert("No projects found.");
-        }
         
         $.each(data, function(i, ob) {
           var marker = new google.maps.Marker({
@@ -53,6 +51,10 @@ function populateMarkers(apiLoc) {
           '<div>Description: ' + marker.msgBody +"</div>" +  
           "<div>Contact: " + marker.name + "</div>" +
           '<div>Contact Email: <a href="mailto:' + marker.email + '">' + marker.email + '</a></div>';
+          
+          $(".modal-body").append(content);
+          
+          
 
           marker.infowindow = new google.maps.InfoWindow({
                 content: content,

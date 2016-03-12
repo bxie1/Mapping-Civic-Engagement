@@ -5,9 +5,6 @@ html
         link(rel='stylesheet', href='/stylesheets/modal-min-bootstrap.css')
         link(rel='stylesheet', href='//d2v52k3cl9vedd.cloudfront.net/basscss/7.0.0/basscss.min.css')
         link(rel='stylesheet', href='/stylesheets/style.css')
-        
-        //link(rel='stylesheet', href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous")
-
     body
         div.header-div(role='banner')
             img.banner-img.left(src='/images/CollegeLogoGarnet.svg')
@@ -60,13 +57,13 @@ html
                             .modal-content
                                 .modal-header
                                     button.close(type='button', data-dismiss='modal') &times;
-                                    h4.modal-title Modal Header
+                                    h4.modal-title Search Results
                                 .modal-body
                                     p Some text in the modal.
                                 .modal-footer
                                     button.btn.btn-default(type='button', data-dismiss='modal') Close
                     div.py2#search_div
-                        form#search_form
+                        form#search_form.m1
                             input#search_box(type="search" placeholder="Keyword Search" name="keyword_inputs")
                             button#search_btn.btn.btn-primary(type="submit" value = "Search") Go
                 div.col.col-9

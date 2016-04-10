@@ -1,13 +1,10 @@
-//TODO_REPLACE all instances of MongoClient
-var MongoClient = require('mongodb').MongoClient;
+
 var assert = require('assert');
 var express = require('express');
 var path = require('path');
 var config = require('./config');
 var http = require('http');
-var ObjectID = require('mongodb').ObjectID;
 
-//var dbUrl = 'mongodb://localhost:27017/sse';
 
 var app = new express();
 
@@ -56,7 +53,6 @@ app.get('/api/v1/search/:keywords',function(req,res){
   keywords = keywords.replace(/ /g,"%20");
   //Retrieve posts from the WordPress site
   keywords = "search=" + keywords
-  //TODO Create query with &search=keyword
   options.path = '/wp-json/wp/v2/posts?'+keywords;
   
   
@@ -85,7 +81,7 @@ app.get('/api/v1/applytags/:tag',function(req,res){
   var taglist = req.params.tag;
   taglist = taglist.replace(/ /g,"%20");
    
-   //Retrieve posts from the WordPress site
+  //Retrieve posts from the WordPress site
   options.path = '/wp-json/wp/v2/posts?filter[category_name]='+taglist;
   console.log("APPLY!! Path: " + options.path);
   http.request(options, function(resp) {

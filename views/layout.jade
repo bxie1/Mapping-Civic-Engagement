@@ -1,16 +1,15 @@
 doctype html
 html
     head
-        title= title
-        link(rel='stylesheet', href='http://d2v52k3cl9vedd.cloudfront.net/basscss/7.0.0/basscss.min.css')
+        title Civic Engagement Landscape
+        link(rel='stylesheet', href='/stylesheets/modal-min-bootstrap.css')
+        link(rel='stylesheet', href='//d2v52k3cl9vedd.cloudfront.net/basscss/7.0.0/basscss.min.css')
         link(rel='stylesheet', href='/stylesheets/style.css')
-
     body
         div.header-div(role='banner')
             img.banner-img.left(src='/images/CollegeLogoGarnet.svg')
             h1.main-title.center Civic Engagement Mapping
-            h3.center Sponsored by the Lang Center for Civic and Social Responsibility
-            //img.inline-block.banner-img.left(src='/images/lang-center-logo.png')
+            #trademark.right.p1 Powered by: The Lang Center
         div.container
             div.clearfix
                 #filters.col.col-3
@@ -53,13 +52,25 @@ html
 
                         div
                             button#apply.m1.btn.btn-primary(type="button") Apply Settings
-                    div.py3
-                        form#search_form
+                    #search_modal.modal.fade(role='dialog')
+                        .modal-dialog
+                            .modal-content
+                                .modal-header
+                                    button.close(type='button', data-dismiss='modal') &times;
+                                    h4.modal-title Search Results
+                                .modal-body
+                                    p Some text in the modal.
+                                .modal-footer
+                                    button.btn.btn-default(type='button', data-dismiss='modal') Close
+                    div.py2#search_div
+                        form#search_form.m1
                             input#search_box(type="search" placeholder="Keyword Search" name="keyword_inputs")
                             button#search_btn.btn.btn-primary(type="submit" value = "Search") Go
+                        a.m1(href="javascript:$('#search_modal').modal('toggle')") Open Results
                 div.col.col-9
                     #map_canvas
         block content
-        script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js')
+        script(src='//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js')
+        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous")
         script(src='/javascripts/main.js')
         script(src='https://maps.googleapis.com/maps/api/js?&sensor=false')

@@ -54,8 +54,6 @@ function populateMarkers(apiLoc) {
           
           $(".modal-body").append(content);
           
-          
-
           marker.infowindow = new google.maps.InfoWindow({
                 content: content,
                 maxWidth: 400
@@ -74,6 +72,7 @@ function populateMarkers(apiLoc) {
     
 }
 
+// Search
 $("#search_form").submit(function(event){
     //Closes any open infowindows
     if (currentInfoWindow) currentInfoWindow.close();
@@ -84,8 +83,6 @@ $("#search_form").submit(function(event){
     markers = [];
     
     applyPath += $('#search_box').val();
-    //alert(applyPath);
-    //TODO Tokenize Keywords / Sanitize Input
     
     populateMarkers(applyPath);
     $('#search_modal').modal('toggle');
@@ -94,7 +91,7 @@ $("#search_form").submit(function(event){
 
 
 $("#apply").click(function() {
-    //Closes any open infowindows
+    // Closes any open infowindows
     if (currentInfoWindow) currentInfoWindow.close();
     var applyPath = '/api/v1/applytags/';
     for (var i = 0; i < markers.length; i++) {

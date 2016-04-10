@@ -8,8 +8,8 @@ html
     body
         div.header-div(role='banner')
             img.banner-img.left(src='/images/CollegeLogoGarnet.svg')
-            h1.main-title.center Civic Engagement Landscape
-            h3.right.p1 Powered by The Lang Center
+            h1.main-title.center Civic Engagement Mapping
+            #trademark.right.p1 Powered by: The Lang Center
         div.container
             div.clearfix
                 #filters.col.col-3
@@ -66,6 +66,7 @@ html
                         form#search_form.m1
                             input#search_box(type="search" placeholder="Keyword Search" name="keyword_inputs")
                             button#search_btn.btn.btn-primary(type="submit" value = "Search") Go
+                        a.m1(href="javascript:$('#search_modal').modal('toggle')") Open Results
                 div.col.col-9
                     #map_canvas
         block content

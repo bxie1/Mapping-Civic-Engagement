@@ -53,7 +53,6 @@ app.get('/api/v1/search/:keywords',function(req,res){
   keywords = keywords.replace(/ /g,"%20");
   //Retrieve posts from the WordPress site
   keywords = "search=" + keywords
-  //TODO Create query with &search=keyword
   options.path = '/wp-json/wp/v2/posts?'+keywords;
   
   

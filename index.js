@@ -33,18 +33,26 @@ options.path = '/wp-json/wp/v2/posts/';
   http.request(options, function(resp) {
     var docs;
     resp.setEncoding('utf8');
-      resp.on('data', function (chunk) {
+    resp.on('data', function (chunk) {
       if (docs === undefined){
           docs = chunk;
       } else{
           docs +=chunk;
       }
-      });
-      resp.on('end', function(){
-      var jdocs = JSON.parse(docs);
-      res.json(jdocs);
-      });
+    });
+    resp.on('end', function(){
+      try{
+        var jdocs = JSON.parse(docs);
+        res.json(jdocs);
+      }
+      catch(e){
+        console.log("JSON parse error main site.");
+        res.json("");
+      }
+      
+    });
   }).end();
+  
   console.log("HTTP request done.");
 });
 
@@ -69,8 +77,14 @@ app.get('/api/v1/search/:keywords',function(req,res){
       }
       });
       resp.on('end', function(){
-      var jdocs = JSON.parse(docs);
-      res.json(jdocs);
+        try{
+          var jdocs = JSON.parse(docs);
+          res.json(jdocs);
+          }
+          catch(e){
+            console.log("JSON parse Error for search.");
+            res.json("");
+          }
       });
   }).end();
   console.log("HTTP request done for search.");
@@ -95,8 +109,14 @@ app.get('/api/v1/applytags/:tag',function(req,res){
       }
       });
       resp.on('end', function(){
-      var jdocs = JSON.parse(docs);
-      res.json(jdocs);
+          try{
+          var jdocs = JSON.parse(docs);
+          res.json(jdocs);
+          }
+          catch(e){
+            console.log("JSON parse error for categories.");
+            res.json("");
+          }
       });
   }).end();
   console.log("HTTP request done for apply tags.");

@@ -27,11 +27,12 @@ function initialize() {
 
 function populateMarkers(apiLoc) {
     apiLoc = typeof apiLoc !== 'undefined' ? apiLoc : '/api/v1/';
-    $(".modal-body").empty();
+    $("#search_modal .modal-body").empty();
+    console.log("Trying to get JSON from /api/vi/");
     $.getJSON(apiLoc, function(data) {
         // For each item in our JSON, add a new map marker
         console.log("Got JSON");
-        $(".modal-header h4").html("<h4>" + data.length + " Result(s) Found</h4>" );
+        $("#search_modal .modal-header h4").html("<h4>" + data.length + " Result(s) Found</h4>" );
         
         
         $.each(data, function(i, ob) {
@@ -52,7 +53,7 @@ function populateMarkers(apiLoc) {
           "<div>Contact: " + marker.name + "</div>" +
           '<div>Contact Email: <a href="mailto:' + marker.email + '">' + marker.email + '</a></div>';
           
-          $(".modal-body").append(content);
+          $("#search_modal .modal-body").append(content);
           
           marker.infowindow = new google.maps.InfoWindow({
                 content: content,

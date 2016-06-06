@@ -1,7 +1,7 @@
 doctype html
 html
     head
-        title Civic Engagement Landscape
+        title Civic Engagement Mapping
         link(rel='stylesheet', href='/stylesheets/modal-min-bootstrap.css')
         link(rel='stylesheet', href='//d2v52k3cl9vedd.cloudfront.net/basscss/7.0.0/basscss.min.css')
         link(rel='stylesheet', href='/stylesheets/style.css')
@@ -62,11 +62,22 @@ html
                                     p Some text in the modal.
                                 .modal-footer
                                     button.btn.btn-default(type='button', data-dismiss='modal') Close
+                    #info_form.modal.fade(role='dialog')
+                        .modal-dialog
+                            .modal-content
+                                .modal-header
+                                    button.close(type='button', data-dismiss='modal') &times;
+                                    h4.modal-title Get your own project mapped!
+                                .modal-body
+                                    p Some text in the modal.
+                                .modal-footer
+                                    button.btn.btn-default(type='button', data-dismiss='modal') Close
                     div.py2#search_div
                         form#search_form.m1
                             input#search_box(type="search" placeholder="Keyword Search" name="keyword_inputs")
                             button#search_btn.btn.btn-primary(type="submit" value = "Search") Go
                         a.m1(href="javascript:$('#search_modal').modal('toggle')") Open Results
+                        a.m1(href="javascript:$('#info_form').modal('toggle')") Want to get your own information featured?
                 div.col.col-9
                     #map_canvas
         block content

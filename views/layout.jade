@@ -69,7 +69,7 @@ html
                                     button.close(type='button', data-dismiss='modal') &times;
                                     h4.modal-title Get your own project mapped!
                                 .modal-body
-                                    p Some text in the modal.
+                                    iframe(src="https://docs.google.com/forms/d/1Wx-lw8WiSyvhUiIcBmGq0G5CWQbzVSDsGzEODw6-_I4/viewform" height='500px' width='500px')
                                 .modal-footer
                                     button.btn.btn-default(type='button', data-dismiss='modal') Close
                     div.py2#search_div
@@ -77,6 +77,7 @@ html
                             input#search_box(type="search" placeholder="Keyword Search" name="keyword_inputs")
                             button#search_btn.btn.btn-primary(type="submit" value = "Search") Go
                         a.m1(href="javascript:$('#search_modal').modal('toggle')") Open Results
+                        p
                         a.m1(href="javascript:$('#info_form').modal('toggle')") Want to get your own information featured?
                 div.col.col-9
                     #map_canvas

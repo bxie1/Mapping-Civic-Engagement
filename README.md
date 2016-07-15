@@ -19,7 +19,10 @@ Demo available on AWS: http://52.70.181.56:3000/
 3. If this is the first time launching the application, issue the following command to install dependancies ``` npm install ```
 <!--4. Make sure mongodb is running with the following command: ``` mongod ```-->
 <!--5. Insert the sample data with the following command: ``` mongoimport -d sse -c locations  data/sample-data/sample.json --jsonArray --drop ```-->
-4. In a config.js file, specify config.wpSite to be the WordPress site capable of handling API requests.
+4. **In a config.js file, specify config.wpSite to be the WordPress site capable of handling API requests. 
+    Also specify, module.exports = config;
+
+config.listen = 8080;
 5. Once all dependancies have been installed launch the application with the following command ``` node index.js ```
 6. Open a browser and visit the following url: http://http://localhost:3000/
 
